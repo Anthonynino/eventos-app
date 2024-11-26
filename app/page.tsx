@@ -1,3 +1,4 @@
+import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
@@ -5,9 +6,9 @@ export default function Home() {
   return (
     <>
     <Header/>
-    <div className="grid grid-rows-[20px_1fr_20px] bg-slate-100 items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col bg-[#f2f2f2] items-center justify-between min-h-screen p-8 pb-20 gap-16 sm:p-20 font-sans">
       
-        
+        <Content/>
       
       
     </div>
