@@ -2,11 +2,11 @@ import React from 'react';
 
 const Content = () => {
     return (
-        <div className="flex flex-col md:flex-row items-center justify-between p-4 rounded-lg w-full max-w-screen-lg mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-between p-4 rounded-lg w-full max-w-screen-lg mx-auto mt-16 md:mt-0">
             <div className="md:w-1/2 flex flex-col items-start">
-                <h2 className="text-4xl font-[400] text-customText">Encuentra todo</h2>
-                <h2 className="text-4xl mb-4 font-semibold text-customText" >para una boda inolvidable</h2>
-                <span className='mb-4 text-sm text-customText'>Miles de proveedores desde un solo lugar</span>
+                <h2 className="text-2xl md:text-4xl font-[400] text-customText">Encuentra todo</h2>
+                <h2 className="text-2xl md:text-4xl sm:text-2xl mb-4 font-semibold text-customText" >para una boda inolvidable</h2>
+                <span className='mb-4 text-sm text-customText hidden md:block '>Miles de proveedores desde un solo lugar</span>
                 <div className="w-full relative z-40">
                     <div className="relative w-full mb-4">
                         <div className="flex items-center relative">
@@ -29,11 +29,11 @@ const Content = () => {
                             <div className="ais-Hits">
                                 <ul className="ais-Hits-list">
                                 </ul>
-                                    </div>
-                                    </div>
-                                    </div>
+                            </div>
+                        </div>
+                    </div>
                 <div className="grid grid-cols-2 gap-1 w-full">
-                    <div className="flex items-center gap-2 py-3 pl-2 w-full static ">
+                    <div className="flex items-center gap-2 py-3 pl-2 w-full static hidden md:flex">
                         <span className="p-4 shadow rounded-full bg-white grid place-items-center transform transition duration-800 hover:scale-110 hover:-rotate-12 focus:outline-none z-20">
                             <svg width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
                             <path d="M24.0537 24.5213C24.1928 24.4641 24.2991 24.3577 24.3591 24.2187L26.4696 19.1904C26.7041 18.6069 26.9059 17.9797 27.0477 17.3853C27.0613 17.3362 27.0695 17.309 27.0722 17.2817C28.1275 12.7607 26.8105 8.13057 23.5547 4.86932C21.0651 2.3743 17.7466 1 14.2127 1C10.6788 1 7.35752 2.3743 4.86523 4.87205C-0.288411 10.0339 -0.288411 18.4324 4.86523 23.5942C7.73109 26.4655 11.8513 27.8753 15.8842 27.3626L16.0205 27.3463L20.8088 30.8911C20.9451 30.992 21.1251 31.0247 21.2887 30.9811C21.4551 30.9347 21.5887 30.8175 21.6568 30.6566L22.993 27.4744C23.1129 27.1881 22.9793 26.8582 22.693 26.7382C22.5539 26.681 22.404 26.6782 22.2649 26.7355C22.1258 26.7927 22.0195 26.8991 21.9595 27.0382L20.9015 29.5604L16.4977 26.3047C16.3778 26.2147 16.2278 26.1765 16.0805 26.201C12.2712 26.7927 8.37462 25.5221 5.656 22.8007C0.941373 18.0779 0.941373 10.3911 5.656 5.66827C7.93833 3.38322 10.9733 2.12617 14.21 2.12617C17.4439 2.12617 20.4816 3.38322 22.7639 5.66827C25.7607 8.66775 26.9604 12.9297 25.9734 17.0663L25.9679 17.0963C25.8288 17.6689 25.6489 18.2279 25.4362 18.7623L23.3284 23.7851C23.2084 24.0714 23.342 24.4014 23.6283 24.5213C23.7619 24.5786 23.9146 24.5786 24.0537 24.5213Z" fill="#FF5887" stroke="#FF5887" stroke-width="0.5">
@@ -74,7 +74,7 @@ const Content = () => {
                             Organizador de bodas
                             </h2>
                     </div>
-                    <div className="flex items-center gap-3 py-3 pl-2 w-full static ">
+                    <div className="flex items-center gap-3 py-3 pl-2 w-full static hidden md:flex">
                         <span className="p-4 shadow rounded-full bg-white grid place-items-center transform transition duration-800 hover:scale-110 hover:-rotate-12 focus:outline-none z-20">
                         <svg width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
                             <path d="M11.8889 11.8889V21.2222V11.8889ZM11.8889 21.2222L7.22222 16.5556L11.8889 21.2222ZM11.8889 21.2222L16.5556 16.5556L11.8889 21.2222ZM19.6667 29H4.11111C3.28599 29 2.49467 28.6722 1.91122 28.0888C1.32778 27.5053 1 26.714 1 25.8889V4.11111C1 3.28599 1.32778 2.49467 1.91122 1.91122C2.49467 1.32778 3.28599 1 4.11111 1H12.8004C13.213 1.00009 13.6086 1.16403 13.9002 1.45578L22.322 9.87756C22.6137 10.1692 22.7777 10.5648 22.7778 10.9773V25.8889C22.7778 26.714 22.45 27.5053 21.8666 28.0888C21.2831 28.6722 20.4918 29 19.6667 29Z" stroke="#FF5887" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -114,7 +114,7 @@ const Content = () => {
                     <img
                         src="https://www.bodasdehoy.com/_next/image?url=%2Fphoto-principal.webp&w=1920&q=75"
                         alt="Placeholder"
-                        className="w-full h-auto rounded-lg"
+                        className="w-full max-w-[300px] h-auto rounded-lg md:max-w-[80%]"
                     />
                     <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#f2f2f2] via-transparent to-transparent rounded-b-lg"></div>
                 </div>

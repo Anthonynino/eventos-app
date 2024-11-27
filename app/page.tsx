@@ -2,6 +2,7 @@ import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Magazine from "./components/Magazine";
+import MakeBoda from "./components/MakeEvent";
 
 export default function Home() {
   return (
@@ -11,9 +12,10 @@ export default function Home() {
       
         <Content/>
         <Magazine/>
+        
       
     </div>
-
+    <MakeBoda/>
     <Footer/>
     </>
 

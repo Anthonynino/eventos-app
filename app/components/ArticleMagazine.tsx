@@ -1,6 +1,6 @@
 const ArticleMagazine = () => {
     return ( 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative rounded-xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 relative rounded-xl">
                 <div className="md:col-span-2 relative z-20">
                     
                 </div>
@@ -12,7 +12,7 @@ const ArticleMagazine = () => {
                     />
                 </div>
                 <div className="bg-white w-3/5 rounded-2xl shadow-lg h-max absolute top-1/3 mt-3 left-0 md:left-[2%] py-6 px-12 z-10">
-                    <h2 className="font-bold text-xl cursor-pointer hover:text-gray-700 transition text-gray-800">
+                    <h2 className="font-semibold text-xl cursor-pointer hover:text-gray-700 transition text-gray-800">
                         7 tendencias de bodas que desapareceran ¡impresionante!
                     </h2>
                     <div className="grid grid-cols-8 pt-3">
