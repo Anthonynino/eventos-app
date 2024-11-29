@@ -1,7 +1,7 @@
 const Footer = () => {
     return ( <>
 
-<footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+<footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center bg-[#f2f2f2]">
           <div className="hidden md:block bg-color-base w-full pb-8 pt-10 container mx-auto inset-x-0 max-w-screen-lg 2xl:max-w-screen-xl w-full">
               <div className="max-w-screen-lg 2xl:max-w-screen-2xl mx-auto inset-x-0">
                   <div className="border-b border-[#f7628c] pt-10 pb-8 ">
