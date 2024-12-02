@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Restaurantes",
+    "href": "https://site1.com",
+    "img": "https://api.bodasdehoy.com/uploads/112c1d/Restaurantes-i640.webp"
+  },
+  {
+    "name": "Hoteles",
+    "href": "https://site2.com",
+    "img": "https://api.bodasdehoy.com/uploads/112ee4/Hoteles-i640.webp"
+  },
+  {
+    "name": "Castillos",
+    "href": "https://site3.com",
+    "img": "https://api.bodasdehoy.com/uploads/049179/-mg-1831_1_171581-161391469596060-i640.webp"
+  },
+  {
+    "name": "Fincas",
+    "href": "https://site4.com",
+    "img": "https://api.bodasdehoy.com/uploads/112956/Fincas-i640.webp"
+  }
+]
