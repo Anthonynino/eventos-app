@@ -2,7 +2,7 @@ import CardImg from "./Cards/CardImg";
 import sites from "../sites.json";
 import { FaCamera } from "react-icons/fa";
 import CardInfo from "./Cards/CardInfo";
-import ButtonRecomend from "./ButtonRecomend";
+import ButtonRecomend from "./Buttons/ButtonRecomend";
 
 const EventSites = () => {
     return ( 
@@ -45,7 +45,7 @@ const EventSites = () => {
                         Recomendados <span className="text-[#F7628C] font-light">para tu boda</span>
                     </h2>
                 </div>
-                <div className="w-full py-5 mx-auto md:pl-0 overflow-hidden text-white">
+                <div className="w-full mx-auto md:pl-0 overflow-hidden text-white">
                     <ButtonRecomend/>
                     
                 </div>

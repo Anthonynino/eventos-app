@@ -6,7 +6,7 @@ const ButtonRecomend = () => {
             <image href="https://api.bodasdehoy.com/uploads/594237/Fotografos.svg" className="w-full h-full" />
         </svg>
         <p className="absolute inset-0 flex mt-1 items-center justify-center text-tertiary font-medium text-center text-xs md:text-sm capitalize hidden group-hover:flex">
-            servicios para bodas
+            <a href="">Servicios para bodas</a>
         </p>
     </div>
 </div>
