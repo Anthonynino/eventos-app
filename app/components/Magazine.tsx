@@ -2,7 +2,7 @@ import ArticleMagazine from "./ArticleMagazine";
 
 const Magazine = () => {
     return ( 
-        <div className="max-w-screen-lg mx-auto mt-10 relative py-8">
+        <div className="max-w-screen-lg mx-auto relative py-8">
             <div className="relative z-10 hidden md:block">
                 <ArticleMagazine />
             </div>

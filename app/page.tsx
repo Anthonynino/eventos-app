@@ -14,8 +14,6 @@ export default function Home() {
         <Content/>
         <EventSites/>
         <Magazine/>
-        
-      
     </div>
     <MakeBoda/>
     <Footer/>

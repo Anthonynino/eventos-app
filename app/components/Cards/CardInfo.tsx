@@ -22,7 +22,7 @@ const CardInfo = () => {
                                         alicante
                                     </p>
                                 </div>
-                                <span className="h-0 opacity-0 text-xs text-gray-500 line-clamp-4 transition-all duration-500 group-hover:h-auto group-hover:opacity-100">
+                                <span className="h-0 mt-2 opacity-0 text-xs text-gray-500 line-clamp-4 transition-all duration-500 group-hover:h-auto group-hover:opacity-100">
                                     Hotel Huerto del CuraUn oasis en el palmeral de Elche**** estrellas💍 Bodas y eventos únicos🍴 
                                     Restaurante Els CapellansÚnico en el mundo, el Hotel Huerto del Cura está 
                                     en el corazón del Palmeral de Elche, declarado Patrimonio de la Humanidad por la UNESCO.
