@@ -29,7 +29,7 @@ const WelcomeApp = () => {
                         <p className="text-[#f7628c] font-semibold">
                         Coordina desde tu móvil todas las acciones para un evento memorable.
                         </p>
-                        <button className=" text-[#f7628c] bg-yellow-300 py-[8px] px-[22px] shadow-md">CREA GRATIS TU EVENTO</button>
+                        <button className=" text-[#f7628c] bg-[#FBFF4E] py-[8px] px-[22px] shadow-md">CREA GRATIS TU EVENTO</button>
                     </div>
                 </div>
             </div>
