@@ -3,7 +3,7 @@ import Link from "next/link";
 const CardSliderMazine = () => {
     return ( <>
         <div>
-            <div className="w-[20%] h-full mx-auto mt-4 inset-x-0 bg-white rounded-3xl overflow-hidden hover:shadow-xl hover:opacity-95 transition-all cursor-pointer duration-400 border">
+            <div className="w-[20%] h-full mx-auto mt-5 inset-x-0 bg-white rounded-3xl overflow-hidden hover:shadow-xl hover:opacity-95 transition-all cursor-pointer duration-400 border">
                 <Link href="/magazine/como-calcular-vino-para-una-boda-paso-a-paso">
                     
                         <img alt="¿Cómo calcular vino para una boda? paso a paso" className="h-40 w-full object-cover object-center" src="https://api.bodasdehoy.com/uploads/ded266/como-calcular-vino-para-una-boda.jpg" />
