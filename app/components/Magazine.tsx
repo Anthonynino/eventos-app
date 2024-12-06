@@ -13,13 +13,16 @@ const Magazine = () => {
             <h1 className="text-7xl text-[#f7628c] font-italiana absolute inset-0 flex items-center justify-center md:justify-start md:items-start md:top-10 md:left-8 z-20">
                 Magazine
             </h1>
-            <div>
-                
-            </div>
+      
         </div>
         <div className="w-full">
             <ButtonSlider />
-            <CardSliderMazine />
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <CardSliderMazine/>
+                <CardSliderMazine/>
+                <CardSliderMazine/>
+                <CardSliderMazine/>
+            </div>
         </div>
         </>
      );
