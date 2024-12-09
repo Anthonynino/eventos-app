@@ -51,7 +51,7 @@ const MagazinePage = () => {
                         </h2>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
                             <div className="flex items-center justify-center flex-col">
-                                <button className="text-tertiary flex flex-col gap-2 items-center justify-center cursor-pointer p-2 rounded-full p-4  ">
+                                <button className="text-tertiary flex flex-col gap-2 items-center justify-center cursor-pointer p-2 rounded-full p-4 hover:bg-[#f2f2f2] ">
                                     <img src="https://api.bodasdehoy.com/uploads/04d34c/vestidpo.svg" alt="" className="p-3 transition w-20 h-20 flex justify-center items-center cursor-pointer" />
                                 </button>
                                 <small className="text-[#49516f] text-sm">
@@ -59,46 +59,182 @@ const MagazinePage = () => {
                                 </small>
                             </div>
                             <div className="flex items-center justify-center flex-col">
-                                <button className="text-tertiary flex flex-col gap-2 items-center justify-center cursor-pointer p-2 rounded-full p-4  ">
-                                    <img src="https://api.bodasdehoy.com/uploads/04d34c/vestidpo.svg" alt="" className="p-3 transition w-20 h-20 flex justify-center items-center cursor-pointer" />
+                                <button className="text-tertiary flex flex-col gap-2 items-center justify-center cursor-pointer p-2 rounded-full p-4 hover:bg-[#f2f2f2]   ">
+                                    <img src="https://api.bodasdehoy.com/uploads/e461dd/Actualidad.svg" alt="" className="p-3 transition w-20 h-20 flex justify-center items-center cursor-pointer" />
                                 </button>
                                 <small className="text-[#49516f] text-sm">
-                                    Moda nupcial
+                                    Actualidad
                                 </small>
                             </div>
                             <div className="flex items-center justify-center flex-col">
-                                <button className="text-tertiary flex flex-col gap-2 items-center justify-center cursor-pointer p-2 rounded-full p-4  ">
-                                    <img src="https://api.bodasdehoy.com/uploads/04d34c/vestidpo.svg" alt="" className="p-3 transition w-20 h-20 flex justify-center items-center cursor-pointer" />
+                                <button className="text-tertiary flex flex-col gap-2 items-center justify-center cursor-pointer p-2 rounded-full p-4 hover:bg-[#f2f2f2]   ">
+                                    <img src="https://api.bodasdehoy.com/uploads/049898/despues.svg" alt="" className="p-3 transition w-20 h-20 flex justify-center items-center cursor-pointer" />
                                 </button>
                                 <small className="text-[#49516f] text-sm">
-                                    Moda nupcial
+                                    Despues de la boda
                                 </small>
                             </div>
                             <div className="flex items-center justify-center flex-col">
-                                <button className="text-tertiary flex flex-col gap-2 items-center justify-center cursor-pointer p-2 rounded-full p-4  ">
-                                    <img src="https://api.bodasdehoy.com/uploads/04d34c/vestidpo.svg" alt="" className="p-3 transition w-20 h-20 flex justify-center items-center cursor-pointer" />
+                                <button className="text-tertiary flex flex-col gap-2 items-center justify-center cursor-pointer p-2 rounded-full p-4 hover:bg-[#f2f2f2]   ">
+                                    <img src="https://api.bodasdehoy.com/uploads/e46201/Antes%20de%20la%20boda.svg" alt="" className="p-3 transition w-20 h-20 flex justify-center items-center cursor-pointer" />
                                 </button>
                                 <small className="text-[#49516f] text-sm">
-                                    Moda nupcial
+                                    Antes de la boda
                                 </small>
                             </div>
                             <div className="flex items-center justify-center flex-col">
-                                <button className="text-tertiary flex flex-col gap-2 items-center justify-center cursor-pointer p-2 rounded-full p-4  ">
-                                    <img src="https://api.bodasdehoy.com/uploads/04d34c/vestidpo.svg" alt="" className="p-3 transition w-20 h-20 flex justify-center items-center cursor-pointer" />
+                                <button className="text-tertiary flex flex-col gap-2 items-center justify-center cursor-pointer p-2 rounded-full p-4 hover:bg-[#f2f2f2]   ">
+                                    <img src="https://api.bodasdehoy.com/uploads/e461ed/Ceremonia.svg" alt="" className="p-3 transition w-20 h-20 flex justify-center items-center cursor-pointer" />
                                 </button>
                                 <small className="text-[#49516f] text-sm">
-                                    Moda nupcial
+                                    Ceremonia
                                 </small>
                             </div>
                             <div className="flex items-center justify-center flex-col">
-                                <button className="text-tertiary flex flex-col gap-2 items-center justify-center cursor-pointer p-2 rounded-full p-4  ">
-                                    <img src="https://api.bodasdehoy.com/uploads/04d34c/vestidpo.svg" alt="" className="p-3 transition w-20 h-20 flex justify-center items-center cursor-pointer" />
+                                <button className="text-tertiary flex flex-col gap-2 items-center justify-center cursor-pointer p-2 rounded-full p-4 hover:bg-[#f2f2f2]   ">
+                                    <img src="https://api.bodasdehoy.com/uploads/27dc68/Banquetes.svg" alt="" className="p-3 transition w-20 h-20 flex justify-center items-center cursor-pointer" />
                                 </button>
                                 <small className="text-[#49516f] text-sm">
-                                    Moda nupcial
+                                    Servicios
                                 </small>
                             </div>
                             
+                        </div>
+                    </div>
+                </div>
+                <div className="grid md:grid-cols-3 max-w-screen-lg w-full mx-auto inset-x-0 gap-6 px-5 md:px-0 overflow-hidden ">
+                    <div className=" col-span-2 w-full pb-6 ">
+                        <h3 className=" text-lg text-[#f7628c] font-semibold">
+                            Ultimos articulos
+                        </h3>
+                        <div className=" wrapper transition">
+                            <div className=" grid md:grid-cols-2 w-full gap-y-16 grid-rows-1 ">
+                                <div className="w-[90%] h-full mx-auto my-6 inset-x-0 bg-white rounded-3xl overflow-hidden hover:shadow-xl hover:opacity-95 transition-all cursor-pointer duration-400 border ">
+                                    <div>
+                                        <div>
+                                            <img src="https://api.bodasdehoy.com/uploads/ded2bb/luna-de-miel-en-europa.jpg" alt="" className="h-40 w-full object-cover object-center" />
+                                            <div className="py-5 text-center h-full">
+                                                <h3 className=" text-gray-700 text-md font-semibold border-b border-[#f7628c] pb-3 px-5 leading-5 cursor-pointer hover:text-gray-800">
+                                                    <span className="md:line-clamp-2 line-clamp-1">
+                                                    5 destinos de ensueño para luna de miel en Europa
+                                                    </span>
+                                                </h3>
+                                                <div className="flex justify-between items-center py-2 px-5">
+                                                    <p className="text-xs tracking-widest text-[#f7628c]">
+                                                        Ceremonia
+                                                    </p>
+                                                    <p className="text-xs text-gray-500">19/4/2023</p>
+                                                </div>
+                                                <p className="text-xs px-4 py-2 text-gray-500 ">
+                                                    <span className="line-clamp-6">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, voluptatum magni omnis officiis dolor consequuntur cum, nesciunt eius autem accusantium tempora vero, reprehenderit iure harum natus tenetur sint voluptates quidem!
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="w-[90%] h-full mx-auto my-6 inset-x-0 bg-white rounded-3xl overflow-hidden hover:shadow-xl hover:opacity-95 transition-all cursor-pointer duration-400 border ">
+                                    <div>
+                                        <div>
+                                            <img src="https://api.bodasdehoy.com/uploads/ded2bb/luna-de-miel-en-europa.jpg" alt="" className="h-40 w-full object-cover object-center" />
+                                            <div className="py-5 text-center h-full">
+                                                <h3 className=" text-gray-700 text-md font-semibold border-b border-[#f7628c] pb-3 px-5 leading-5 cursor-pointer hover:text-gray-800">
+                                                    <span className="md:line-clamp-2 line-clamp-1">
+                                                    5 destinos de ensueño para luna de miel en Europa
+                                                    </span>
+                                                </h3>
+                                                <div className="flex justify-between items-center py-2 px-5">
+                                                    <p className="text-xs tracking-widest text-[#f7628c]">
+                                                        Ceremonia
+                                                    </p>
+                                                    <p className="text-xs text-gray-500">19/4/2023</p>
+                                                </div>
+                                                <p className="text-xs px-4 py-2 text-gray-500 ">
+                                                    <span className="line-clamp-6">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, voluptatum magni omnis officiis dolor consequuntur cum, nesciunt eius autem accusantium tempora vero, reprehenderit iure harum natus tenetur sint voluptates quidem!
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="w-[90%] h-full mx-auto my-6 inset-x-0 bg-white rounded-3xl overflow-hidden hover:shadow-xl hover:opacity-95 transition-all cursor-pointer duration-400 border ">
+                                    <div>
+                                        <div>
+                                            <img src="https://api.bodasdehoy.com/uploads/ded2bb/luna-de-miel-en-europa.jpg" alt="" className="h-40 w-full object-cover object-center" />
+                                            <div className="py-5 text-center h-full">
+                                                <h3 className=" text-gray-700 text-md font-semibold border-b border-[#f7628c] pb-3 px-5 leading-5 cursor-pointer hover:text-gray-800">
+                                                    <span className="md:line-clamp-2 line-clamp-1">
+                                                    5 destinos de ensueño para luna de miel en Europa
+                                                    </span>
+                                                </h3>
+                                                <div className="flex justify-between items-center py-2 px-5">
+                                                    <p className="text-xs tracking-widest text-[#f7628c]">
+                                                        Ceremonia
+                                                    </p>
+                                                    <p className="text-xs text-gray-500">19/4/2023</p>
+                                                </div>
+                                                <p className="text-xs px-4 py-2 text-gray-500 ">
+                                                    <span className="line-clamp-6">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, voluptatum magni omnis officiis dolor consequuntur cum, nesciunt eius autem accusantium tempora vero, reprehenderit iure harum natus tenetur sint voluptates quidem!
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="w-[90%] h-full mx-auto my-6 inset-x-0 bg-white rounded-3xl overflow-hidden hover:shadow-xl hover:opacity-95 transition-all cursor-pointer duration-400 border ">
+                                    <div>
+                                        <div>
+                                            <img src="https://api.bodasdehoy.com/uploads/ded2bb/luna-de-miel-en-europa.jpg" alt="" className="h-40 w-full object-cover object-center" />
+                                            <div className="py-5 text-center h-full">
+                                                <h3 className=" text-gray-700 text-md font-semibold border-b border-[#f7628c] pb-3 px-5 leading-5 cursor-pointer hover:text-gray-800">
+                                                    <span className="md:line-clamp-2 line-clamp-1">
+                                                    5 destinos de ensueño para luna de miel en Europa
+                                                    </span>
+                                                </h3>
+                                                <div className="flex justify-between items-center py-2 px-5">
+                                                    <p className="text-xs tracking-widest text-[#f7628c]">
+                                                        Ceremonia
+                                                    </p>
+                                                    <p className="text-xs text-gray-500">19/4/2023</p>
+                                                </div>
+                                                <p className="text-xs px-4 py-2 text-gray-500 ">
+                                                    <span className="line-clamp-6">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, voluptatum magni omnis officiis dolor consequuntur cum, nesciunt eius autem accusantium tempora vero, reprehenderit iure harum natus tenetur sint voluptates quidem!
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="w-[90%] h-full mx-auto my-6 inset-x-0 bg-white rounded-3xl overflow-hidden hover:shadow-xl hover:opacity-95 transition-all cursor-pointer duration-400 border ">
+                                    <div>
+                                        <div>
+                                            <img src="https://api.bodasdehoy.com/uploads/ded2bb/luna-de-miel-en-europa.jpg" alt="" className="h-40 w-full object-cover object-center" />
+                                            <div className="py-5 text-center h-full">
+                                                <h3 className=" text-gray-700 text-md font-semibold border-b border-[#f7628c] pb-3 px-5 leading-5 cursor-pointer hover:text-gray-800">
+                                                    <span className="md:line-clamp-2 line-clamp-1">
+                                                    5 destinos de ensueño para luna de miel en Europa
+                                                    </span>
+                                                </h3>
+                                                <div className="flex justify-between items-center py-2 px-5">
+                                                    <p className="text-xs tracking-widest text-[#f7628c]">
+                                                        Ceremonia
+                                                    </p>
+                                                    <p className="text-xs text-gray-500">19/4/2023</p>
+                                                </div>
+                                                <p className="text-xs px-4 py-2 text-gray-500 ">
+                                                    <span className="line-clamp-6">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, voluptatum magni omnis officiis dolor consequuntur cum, nesciunt eius autem accusantium tempora vero, reprehenderit iure harum natus tenetur sint voluptates quidem!
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
