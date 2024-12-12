@@ -3,12 +3,11 @@ import { FaRegSquarePlus } from "react-icons/fa6";
 
 const AppEvents = () => {
     return ( 
-        <>
-        <NavbarApp/>
-        <div>
-            <div className="w-[100%]  overflow-auto overflow-y-scroll h-[calc(100vh-144px)]">
-                <div>
-                    <div className=" section relative w-full">
+        <div className="w-[100vw] h-[100vh]">
+            <NavbarApp/>
+        <div className="w-[100%]  overflow-auto overflow-y-scroll h-[calc(100vh-144px)]">
+            <main >
+                    <section className=" section relative w-full">
                         <div className=" banner bg-[#f2f2f2] w-full flex justify-center h-[60%] md:h-[calc(100%-200px-50px)] md:min-h-[300px] px-5 md:px-0 overflow-hidden relative mb-1">
                             <div className=" md:max-w-screen-lg 2xl:max-w-screen-xl w-full grid md:grid-cols-5 h-full">
                                 <div className=" flex flex-col justify-center relative py-10 md:py-0 col-span-2">
@@ -32,7 +31,7 @@ const AppEvents = () => {
                                     </svg> 
                                 </div>
                                 <div className="hidden md:block relative overflow-hidden col-span-3">
-                                        <img src="https://organizador.bodasdehoy.com/IndexImg2.png" alt="" className=" z-20 image mx-auto inset-x-0 relative top-16" />
+                                        <img src="https://organizador.bodasdehoy.com/IndexImg2.png" alt="" className="z-20 image mx-auto inset-x-0 relative top-32" />
                                 </div>
                             </div>
                         </div>
@@ -53,7 +52,7 @@ const AppEvents = () => {
                                     <div>
                                         <div>
                                             <div className=" flex items-center justify-center my-3">
-                                                <div className="w-72 h-36 rounded-xl flex flex-col items-center justify-center cursor-pointer shadow-lg bg-base border border-gray-100 transition text-[#f7628c]">
+                                                <div className="w-72 h-36 rounded-xl flex flex-col items-center justify-center cursor-pointer shadow-lg bg-[#f2f2f2] border border-gray-100 transition text-[#f7628c]">
                                                     <FaRegSquarePlus className="text-[#f7628c] w-10 h-10"/>
                                                     <p className="font-display font-base text-md">
                                                         Crear nuevo evento
@@ -64,12 +63,27 @@ const AppEvents = () => {
                                     </div>
                                 </div>
                             </div>
+                            <div className="absolute top-4 right-0 cursor-pointer hidden md:block ">
+                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" className="h-5 w-5" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none">
+                                    </path>
+                                    <path d="M12 21h-7a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v8">
+                                    </path>
+                                    <path d="M3 10h18">
+                                    </path>
+                                    <path d="M10 3v18">
+                                    </path>
+                                    <path d="M16 22l5 -5">
+                                    </path>
+                                    <path d="M21 21.5v-4.5h-4.5">
+                                    </path>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </section>
+            </main>
             </div>
         </div>
-        </>
 
         
      );
