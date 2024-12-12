@@ -88,11 +88,42 @@ const NavbarApp = () => {
                         </div>
                     </div>
                 </div>
-                <div className="block">
-                    <div className="w-full h-20 hidden md:flex bg-base justify-center items-start">
-                        <div className="group flex relative ">
-
-                        </div>
+                <div className="bg-[#f7628c] py-2 w- border-t border-b border-gray-300">
+                    <div className="max-w-screen-lg mx-auto flex justify-center items-center px-5 lg:px-0">
+                        <ul className="flex gap-5 text-lg text-white">
+                            <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
+                                <FaBell className="w-6 h-6" />
+                                <span>Mis eventos</span>
+                            </li>
+                            <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
+                                <FaBomb className="w-6 h-6" />
+                                <span>Resumen</span>
+                            </li>
+                            <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
+                                <FaChevronDown className="w-6 h-6" />
+                                <span>Invitados</span>
+                            </li>
+                            <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
+                                <FaListCheck className="w-6 h-6" />
+                                <span>Mesas</span>
+                            </li>
+                            <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
+                                <FaBell className="w-6 h-6" />
+                                <span>Lista de regalos</span>
+                            </li>
+                            <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
+                                <FaBomb className="w-6 h-6" />
+                                <span>Presupuesto</span>
+                            </li>
+                            <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
+                                <FaChevronDown className="w-6 h-6" />
+                                <span>Invitaciones </span>
+                            </li>
+                            <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
+                                <FaListCheck className="w-6 h-6" />
+                                <span>Itinerario</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </header>
