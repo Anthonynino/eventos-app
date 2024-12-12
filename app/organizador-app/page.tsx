@@ -9,7 +9,7 @@ const AppEvents = () => {
             <main >
                     <section className=" section relative w-full">
                         <div className=" banner bg-[#f2f2f2] w-full flex justify-center h-[60%] md:h-[calc(100%-200px-50px)] md:min-h-[300px] px-5 md:px-0 overflow-hidden relative mb-1">
-                            <div className=" md:max-w-screen-lg 2xl:max-w-screen-xl w-full grid md:grid-cols-5 h-full">
+                            <div className=" md:max-w-screen-lg 2xl:max-w-screen-xl w-full grid md:grid-cols-5 h-96">
                                 <div className=" flex flex-col justify-center relative py-10 md:py-0 col-span-2">
                                     <h2 className=" font-display font-medium text-2xl md:text-5xl tracking-tight text-[#f7628c] mb-1.5">
                                         Organiza tus eventos

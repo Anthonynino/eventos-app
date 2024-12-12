@@ -88,7 +88,13 @@ const NavbarApp = () => {
                         </div>
                     </div>
                 </div>
-                
+                <div className="block">
+                    <div className="w-full h-20 hidden md:flex bg-base justify-center items-start">
+                        <div className="group flex relative ">
+
+                        </div>
+                    </div>
+                </div>
             </header>
         </div>
     </div> );
