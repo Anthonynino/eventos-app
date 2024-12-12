@@ -1,7 +1,21 @@
+"use client";
+
+
 import { FaBell, FaBomb  } from "react-icons/fa";
-import { FaChevronDown, FaListCheck } from "react-icons/fa6";
+import { FaChevronDown, FaListCheck,FaBriefcase, FaRegBell } from "react-icons/fa6";
+import { LuUserPlus } from "react-icons/lu";
+import { IoLogInOutline,IoDocumentTextOutline, IoHeartCircleSharp  } from "react-icons/io5";
+import { useState } from "react";
+
 
 const NavbarApp = () => {
+
+    const [active, setActive] = useState(false)
+
+    const handleActive = () =>{
+        setActive(!active)
+    }
+
     return ( <div>
         <div className="w-full flex justify-center relative">
             <header className="f-top relative w-full bg-white">
@@ -71,8 +85,48 @@ const NavbarApp = () => {
                                 </div>
                             </div>
                             <div className="bg-white items-center gap-2 flex relative">
+                                {
+                                    active && <div className="bg-white rounded-lg w-80 h-max shadow-lg shadow-gray-400 absolute top-0 md:right-0 translate-y-[46px] -translate-x-[250px] md:-translate-x-[0px] overflow-hidden z-40 title-display">
+                                    <div className="w-full border-b border-gray-100 pb-2">
+                                        <p className="text-gray-500 font-extralight uppercase tracking-wider text-xs text-center cursor-default">
+                                            <h3 className="text-primary font-medium w-full text-center cursor-default ">
+                                                guest
+                                            </h3>
+                                        </p>
+                                    </div>
+                                    <ul className="grid grid-cols-2 gap-2 text-xs place-items-left p-2 ">
+                                        <li className="flex text-gray-700 gap-2 hover:bg-color-base transition cursor-pointer rounded-lg py-1 px-2 items-center justify-start">
+                                            <IoLogInOutline className="w-5 h-5" />
+                                            Iniciar sesion
+                                        </li>
+                                        <li className="flex text-gray-700 gap-2 hover:bg-color-base transition cursor-pointer rounded-lg py-1 px-2 items-center justify-start">
+                                            <LuUserPlus className="w-5 h-5" />
+                                            Registrarse
+                                        </li>
+                                        <li className="flex text-gray-700 gap-2 hover:bg-color-base transition cursor-pointer rounded-lg py-1 px-2 items-center justify-start">
+                                            <FaBriefcase className="w-5 h-5" />
+                                            Empresas
+                                        </li>
+                                        <li className="flex text-gray-700 gap-2 hover:bg-color-base transition cursor-pointer rounded-lg py-1 px-2 items-center justify-start">
+                                            <FaRegBell className="w-5 h-5" />
+                                            Notificaciones
+                                        </li>
+                                        <li className="flex text-gray-700 gap-2 hover:bg-color-base transition cursor-pointer rounded-lg py-1 px-2 items-center justify-start">
+                                            <IoDocumentTextOutline className="w-5 h-5" />
+                                            Mis publicaciones
+                                        </li>
+                                        <li className="flex text-gray-700 gap-2 hover:bg-color-base transition cursor-pointer rounded-lg py-1 px-2 items-center justify-start">
+                                            <IoHeartCircleSharp className="w-5 h-5" />
+                                            Mis proveedores
+                                        </li>
+                                        <div className="col-span-2 flex text-white gap-2 bg-[#f7628c] hover:bg-slate-400 transition cursor-pointer rounded-lg py-1 px-2 items-center justify-center ">
+                                                Obten acceso completo
+                                        </div>
+                                    </ul>
+                                </div>
+                                }
                                 <img src="https://organizador.bodasdehoy.com/placeholder/user.png" alt="" className="object-cover w-10 h-10 rounded-full" />
-                                <FaChevronDown className="w-5 h-5 transform cursor-pointer text-gray-600" />
+                                <FaChevronDown className="w-5 h-5 transform cursor-pointer text-gray-600" onClick={handleActive} />
                                 <p className="font-display text-sm text-gray-500 capitalize">
                                 </p>
                             </div>
@@ -88,40 +142,40 @@ const NavbarApp = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-[#f7628c] py-2 w- border-t border-b border-gray-300">
+                <div className="bg-[#f7628c] py-2 w- border-t border-b border-gray-300 hidden md:block">
                     <div className="max-w-screen-lg mx-auto flex justify-center items-center px-5 lg:px-0">
                         <ul className="flex gap-5 text-lg text-white">
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
                                 <FaBell className="w-6 h-6" />
-                                <span>Mis eventos</span>
+                                <span className="text-sm">Mis eventos</span>
                             </li>
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
                                 <FaBomb className="w-6 h-6" />
-                                <span>Resumen</span>
+                                <span className="text-sm">Resumen</span>
                             </li>
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
                                 <FaChevronDown className="w-6 h-6" />
-                                <span>Invitados</span>
+                                <span className="text-sm">Invitados</span>
                             </li>
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
                                 <FaListCheck className="w-6 h-6" />
-                                <span>Mesas</span>
+                                <span className="text-sm">Mesas</span>
                             </li>
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
                                 <FaBell className="w-6 h-6" />
-                                <span>Lista de regalos</span>
+                                <span className="text-sm">Lista de regalos</span>
                             </li>
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
                                 <FaBomb className="w-6 h-6" />
-                                <span>Presupuesto</span>
+                                <span className="text-sm">Presupuesto</span>
                             </li>
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
                                 <FaChevronDown className="w-6 h-6" />
-                                <span>Invitaciones </span>
+                                <span className="text-sm">Invitaciones </span>
                             </li>
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
                                 <FaListCheck className="w-6 h-6" />
-                                <span>Itinerario</span>
+                                <span className="text-sm">Itinerario</span>
                             </li>
                         </ul>
                     </div>

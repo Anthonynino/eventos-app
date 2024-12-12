@@ -9,7 +9,7 @@ const AppEvents = () => {
             <main >
                     <section className=" section relative w-full">
                         <div className=" banner bg-[#f2f2f2] w-full flex justify-center h-[60%] md:h-[calc(100%-200px-50px)] md:min-h-[300px] px-5 md:px-0 overflow-hidden relative mb-1">
-                            <div className=" md:max-w-screen-lg 2xl:max-w-screen-xl w-full grid md:grid-cols-5 h-96">
+                            <div className=" md:max-w-screen-lg 2xl:max-w-screen-xl w-full grid md:grid-cols-5 h-80">
                                 <div className=" flex flex-col justify-center relative py-10 md:py-0 col-span-2">
                                     <h2 className=" font-display font-medium text-2xl md:text-5xl tracking-tight text-[#f7628c] mb-1.5">
                                         Organiza tus eventos
@@ -31,12 +31,12 @@ const AppEvents = () => {
                                     </svg> 
                                 </div>
                                 <div className="hidden md:block relative overflow-hidden col-span-3">
-                                        <img src="https://organizador.bodasdehoy.com/IndexImg2.png" alt="" className="z-20 image mx-auto inset-x-0 relative top-32" />
+                                        <img src="https://organizador.bodasdehoy.com/IndexImg2.png" alt="" className="z-20 image mx-auto inset-x-0 relative top-16" />
                                 </div>
                             </div>
                         </div>
                         <div className="bg-white w-full flex flex-col h-[40%] md:h-[200px] justify-center items-center max-w-screen-lg xl:max-w-screen-xl inset-x-0 mx-auto relative">
-                            <div className="flex gap-4 mt-[100%] relative">
+                            <div className="flex gap-4 mt-[10%] lg:mt-[100%] md:mt-[100%] relative">
                                 <button className="bg-tertiary text-gray-500 w-max md:mt-4 mb-3 md:mb-2 px-4 py-0.5 rounded-xl flex items-center justify-center cursor-pointer hover:bg-tertiary hover:text-gray-500 transition focus:outline-none text-sm font-display">
                                         pendientes
                                 </button>
@@ -47,7 +47,7 @@ const AppEvents = () => {
                                         Realizados
                                 </button>
                             </div>
-                            <div className="w-full h-max mb-[100%] ">
+                            <div className="w-full h-max mb-[10%] lg:mb-[100%] md:mb-[100%] ">
                                 <div>
                                     <div>
                                         <div>
