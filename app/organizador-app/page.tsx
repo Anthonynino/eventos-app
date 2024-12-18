@@ -1,5 +1,8 @@
+
 import NavbarApp from "../components/Navbar/NavbarApp";
 import { FaRegSquarePlus } from "react-icons/fa6";
+
+import CardEvent from "../components/Cards/CardEvent";
 
 const AppEvents = () => {
     return ( 
@@ -35,7 +38,7 @@ const AppEvents = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-white w-full flex flex-col h-[40%] md:h-[200px] justify-center items-center max-w-screen-lg xl:max-w-screen-xl inset-x-0 mx-auto relative">
+                        <div className="bg-white mt-5 w-full flex flex-col h-[40%] md:h-[200px] justify-center items-center max-w-screen-lg xl:max-w-screen-xl inset-x-0 mx-auto relative">
                             <div className="flex gap-4 mt-[10%] lg:mt-[100%] md:mt-[100%] relative">
                                 <button className="bg-tertiary text-gray-500 w-max md:mt-4 mb-3 md:mb-2 px-4 py-0.5 rounded-xl flex items-center justify-center cursor-pointer hover:bg-tertiary hover:text-gray-500 transition focus:outline-none text-sm font-display">
                                         pendientes
@@ -50,7 +53,10 @@ const AppEvents = () => {
                             <div className="w-full h-max mb-[10%] lg:mb-[100%] md:mb-[100%] ">
                                 <div>
                                     <div>
-                                        <div>
+                                        <div className="false mb-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4">
+                                            <div className="flex items-center justify-center my-3">
+                                                <CardEvent/>
+                                            </div>
                                             <div className=" flex items-center justify-center my-3">
                                                 <div className="w-72 h-36 rounded-xl flex flex-col items-center justify-center cursor-pointer shadow-lg bg-[#f2f2f2] border border-gray-100 transition text-[#f7628c]">
                                                     <FaRegSquarePlus className="text-[#f7628c] w-10 h-10"/>
