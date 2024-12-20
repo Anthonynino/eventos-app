@@ -1,10 +1,20 @@
 
+"use client"
 import NavbarApp from "../components/Navbar/NavbarApp";
 import { FaRegSquarePlus } from "react-icons/fa6";
 
 import CardEvent from "../components/Cards/CardEvent";
+import Modal from "../components/Modal/NewEvent";
+import { useState } from "react";
+
 
 const AppEvents = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
     return ( 
         <div className="w-[100vw] h-[100vh]">
             <NavbarApp/>
@@ -24,7 +34,7 @@ const AppEvents = () => {
                                     Planifica tus celebraciones <span className="font-semibold">Sin estres</span>
                                     </h1>
                                     <span className=" flex gap-2 justify-start items-end">
-                                        <button className=" mt-4 bg-[#f7628c] font-display font-medium text-white px-5 md:px-24 py-2 rounded-lg  box-border hover:bg-gray-200 transition focus:outline-none z-20">
+                                        <button onClick={openModal} className=" mt-4 bg-[#f7628c] font-display font-medium text-white px-5 md:px-24 py-2 rounded-lg  box-border hover:bg-gray-200 transition focus:outline-none z-20">
                                             Crear evento
                                         </button>
                                     </span>
@@ -89,6 +99,7 @@ const AppEvents = () => {
                     </section>
             </main>
             </div>
+            <Modal isOpen={isModalOpen} onClose={closeModal} />
         </div>
 
         
