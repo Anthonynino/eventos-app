@@ -3,8 +3,8 @@ import { FaLocationDot } from 'react-icons/fa6';
 
 const CardInfo = () => {
     return ( 
-        <>
-            <div className="rounded-xl h-fit w-[20%] transition-all duration-500 cursor-pointer mx-auto inset-x-0 md:mb-0 group">
+        <div className='flex'>
+            <div className="rounded-xl h-fit w-full transition-all duration-500 cursor-pointer mx-auto inset-x-0  md:mb-0 ">
                             <img src="https://api.bodasdehoy.com/uploads/5d504d/logo-finca Torre Bsch-i640.webp" className="h-60 md:h-60 rounded-xl w-full relative object-cover object-center transition-all opacity-100" alt="" />
                             <div className="bg-white transition-[height] overflow-hidden shadow rounded-xl md:-mt-16 -mt-10 p-6 flex h-max flex-col z-20 relative">
                                 <h2 className="text-sm pb-0.5 text-tertiary font-semibold truncate capitalize w-full">Hotel atenas</h2>
@@ -29,7 +29,7 @@ const CardInfo = () => {
                                 </span>
                             </div>
                         </div>
-        </>
+        </div>
      );
 }
  
