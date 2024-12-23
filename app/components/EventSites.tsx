@@ -27,11 +27,11 @@ const EventSites = () => {
                         Ver todos los proveedores
                     </p>
                 </div>
-                <div className="md:grid md:grid-cols-1 mt-10 w-full md:mb-0 h-96">
-                    <div className="flex">
+                <div className="grid grid-cols-3 gap-5 md:grid md:grid-cols-1 mt-10 w-full md:mb-0 h-96">
+                    <div className="flex w-[25%]">
                         <CardInfo/>
-                        <CardInfo/>
-                        <CardInfo/>
+                        
+                        
                     </div>
                     
                 </div>
