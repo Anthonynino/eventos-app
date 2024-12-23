@@ -2,6 +2,7 @@ import CardInfo from "../components/Cards/CardInfo";
 import CardSliderMazine from "../components/Cards/CardMagazineSlider";
 import CardSliderCategory from "../components/Cards/CardSliderCategory";
 import FilterVer from "../components/FiltersBar/FiltersVer";
+import Footer from "../components/Footer";
 import Header from "../components/Navbar/Header";
 
 const Category = () => {
@@ -60,6 +61,7 @@ const Category = () => {
                         </div>
                     </div>
                 </section>
+                <Footer/>
             </main> 
         </div>
     </> );
