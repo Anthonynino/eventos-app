@@ -1,11 +1,15 @@
 "use client";
 
 
-import { FaBell, FaBomb  } from "react-icons/fa";
-import { FaChevronDown, FaListCheck,FaBriefcase, FaRegBell } from "react-icons/fa6";
+import { FaBell, FaCalendar, FaGift  } from "react-icons/fa";
+import { FaChevronDown, FaListCheck,FaBriefcase, FaRegBell, FaClipboardList, FaSun } from "react-icons/fa6";
 import { LuUserPlus } from "react-icons/lu";
-import { IoLogInOutline,IoDocumentTextOutline, IoHeartCircleSharp  } from "react-icons/io5";
+import { IoLogInOutline,IoDocumentTextOutline, IoHeartCircleSharp, IoBalloon  } from "react-icons/io5";
 import { useState } from "react";
+import Link from "next/link";
+import { HiUsers } from "react-icons/hi2";
+import { ImCalculator } from "react-icons/im";
+import { MdEmail } from "react-icons/md";
 
 
 const NavbarApp = () => {
@@ -146,35 +150,46 @@ const NavbarApp = () => {
                     <div className="max-w-screen-lg mx-auto flex justify-center items-center px-5 lg:px-0">
                         <ul className="flex gap-5 text-lg text-white">
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
-                                <FaBell className="w-6 h-6" />
+                                <IoBalloon className="w-6 h-6" />
+                                <Link href="/organizador-app">
                                 <span className="text-sm">Mis eventos</span>
+                                </Link>
                             </li>
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
-                                <FaBomb className="w-6 h-6" />
+                            <FaClipboardList className="w-6 h-6" />
+                                <Link href="/resumen-evento">
                                 <span className="text-sm">Resumen</span>
+                                </Link>
                             </li>
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
-                                <FaChevronDown className="w-6 h-6" />
+                                <HiUsers className="w-6 h-6" />
                                 <span className="text-sm">Invitados</span>
                             </li>
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
-                                <FaListCheck className="w-6 h-6" />
+                                <FaSun className="w-6 h-6" />
                                 <span className="text-sm">Mesas</span>
                             </li>
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
-                                <FaBell className="w-6 h-6" />
+                                <FaGift className="w-6 h-6" />
+                                <Link href="/lista-regalos">
                                 <span className="text-sm">Lista de regalos</span>
+                                </Link>
                             </li>
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
-                                <FaBomb className="w-6 h-6" />
+                                <ImCalculator className="w-6 h-6" />
+                                <Link href="/presupuesto">
+                                
                                 <span className="text-sm">Presupuesto</span>
+                                </Link>
                             </li>
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
-                                <FaChevronDown className="w-6 h-6" />
+                                <MdEmail className="w-6 h-6" />
+                                <Link href="/invitaciones">
                                 <span className="text-sm">Invitaciones </span>
+                                </Link>
                             </li>
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
-                                <FaListCheck className="w-6 h-6" />
+                                <FaCalendar className="w-6 h-6" />
                                 <span className="text-sm">Itinerario</span>
                             </li>
                         </ul>
