@@ -1,5 +1,4 @@
 "use client";
-
 import { MdEmail, MdOutlineEmail } from "react-icons/md";
 import MinHeader from "../components/MinHeader";
 import NavbarApp from "../components/Navbar/NavbarApp";
@@ -12,6 +11,9 @@ import EmailInvitation from "../components/Invitations/Emailnvitation";
 import WhatsappInvitation from "../components/Invitations/WhatsappInvitation";
 import PhoneInput from "../components/Invitations/PhoneWhats";
 import SmsInvitation from "../components/Invitations/SmsInvitation";
+import DesignInvitation from "../components/Invitations/DesignInvitation";
+import InvitationsPending from "../components/Invitations/InvitationsPending";
+import InvitationsSend from "../components/Invitations/InvitationsSend";
 
 const Invitations = () => {
 
@@ -20,6 +22,12 @@ const Invitations = () => {
         const handleTabClick = (tab: string) => {
             setActiveTab(tab);
         };
+
+    const [table, setTable] = useState('pendientes');
+
+        const handleTableClick = (table: string) => {
+            setTable(table)
+        }
 
     return ( <>
         <div className="w-[100vw] h-[100vh]">
@@ -89,21 +97,21 @@ const Invitations = () => {
                                         </div>
                                         <div className="w-full md:w-2/3  md:h-80 mt-3 md:mt-0 transition-all delay-150  ">
                                             <div className="w-full flex items-center justify-between bg-[#f7628c] md:h-20 mt-3 rounded-t-md md:rounded-xl px-3 pt-1 pb-1 translate-y-10 md:translate-y-0">
-                                                <button onClick={() => handleTabClick('email')} className="bg-white text-[#f7628c] text-xs md:text-sm flex flex-col items-center justify-center w-[25%] md:mx-4 py-1 md:py-3 px-2 rounded-lg md:rounded-xl capitalize md:uppercase">
+                                                <button onClick={() => handleTabClick('email')} className={`${activeTab === 'email' ? 'bg-white text-[#f7628c]' : 'bg-[#f7628c] text-white'} text-xs md:text-sm flex flex-col items-center justify-center w-[25%] md:mx-4 py-1 md:py-3 px-2 rounded-lg md:rounded-xl capitalize md:uppercase`}>
                                                     <MdEmail className="h-6 w-6"/>
                                                     email
                                                 </button>
-                                                <button onClick={() => handleTabClick('whatsapp')} className="bg-white text-[#f7628c] text-xs md:text-sm flex flex-col items-center justify-center w-[25%] md:mx-4 py-1 md:py-3 px-2 rounded-lg md:rounded-xl capitalize md:uppercase">
+                                                <button onClick={() => handleTabClick('whatsapp')} className={`${activeTab === 'whatsapp' ? 'bg-white text-[#f7628c]' : 'bg-[#f7628c] text-white'} text-xs md:text-sm flex flex-col items-center justify-center w-[25%] md:mx-4 py-1 md:py-3 px-2 rounded-lg md:rounded-xl capitalize md:uppercase`}>
                                                     <FaSquareWhatsapp className="h-6 w-6"/>
                                                     Whatsapp
                                                 </button>
-                                                <button onClick={() => handleTabClick('sms')} className="bg-white text-[#f7628c] text-xs md:text-sm flex flex-col items-center justify-center w-[25%] md:mx-4 py-1 md:py-3 px-2 rounded-lg md:rounded-xl capitalize md:uppercase">
+                                                <button onClick={() => handleTabClick('sms')} className={`${activeTab === 'sms' ? 'bg-white text-[#f7628c]' : 'bg-[#f7628c] text-white'} text-xs md:text-sm flex flex-col items-center justify-center w-[25%] md:mx-4 py-1 md:py-3 px-2 rounded-lg md:rounded-xl capitalize md:uppercase`}>
                                                     <FaSms className="h-6 w-6"/>
                                                     SMS
                                                 </button>
-                                                <button className="bg-white text-[#f7628c] text-xs md:text-sm flex flex-col items-center justify-center w-[25%] md:mx-4 py-1 md:py-3 px-2 rounded-lg md:rounded-xl capitalize md:uppercase">
+                                                <button onClick={() => handleTabClick('design')}  className={`${activeTab === 'design' ? 'bg-white text-[#f7628c]' : 'bg-[#f7628c] text-white'} text-xs md:text-sm flex flex-col items-center justify-center w-[25%] md:mx-4 py-1 md:py-3 px-2 rounded-lg md:rounded-xl capitalize md:uppercase`}>
                                                     <FaPenFancy className="h-6 w-6"/>
-                                                    Editar
+                                                    Diseno
                                                 </button>
                                             </div>
                                            {activeTab === 'email' && (
@@ -118,8 +126,8 @@ const Invitations = () => {
                                             <SmsInvitation/>
                                         
                                            )}
-                                           {activeTab === 'email' && (
-                                            <EmailInvitation/>
+                                           {activeTab === 'design' && (
+                                            <DesignInvitation/>
                                         
                                            )}
                                         </div>
@@ -136,34 +144,19 @@ const Invitations = () => {
                                 <div className="md:pt-14 pt-3">
                                     <div className=" my-4">
                                         <div className=" w-96 mx-auto inset-x-0 flex my-2 mt-4 rounded-2xl overflow-hidden border">
-                                            <button className="w-full md:w-[270px] py-1 bg-[#f7628c] text-white h-full grid place-items-center font-display font-medium text-sm cursor-pointer hover:opacity-90">
+                                            <button onClick={() => handleTableClick('pending')} className={`w-full md:w-[270px] py-1 ${table === 'pending' ? 'bg-[#f7628c] text-white' : 'bg-white text-[#f7628c]'} h-full grid place-items-center font-display font-medium text-sm cursor-pointer hover:opacity-90`}>
                                                     Pendientes
                                             </button>
-                                            <button className="w-full md:w-[270px] py-1 bg-white text-[#f7628c] h-full grid place-items-center font-display font-medium text-sm cursor-pointer hover:opacity-90">
+                                            <button onClick={() => handleTableClick('sending')} className={`w-full md:w-[270px] py-1 ${table === 'sending' ? 'bg-[#f7628c] text-white' : 'bg-white text-[#f7628c]'} h-full grid place-items-center font-display font-medium text-sm cursor-pointer hover:opacity-90`}>
                                                     Enviadas
                                             </button>
                                         </div>
-                                        <div className=" bg-white w-full rounded-xl shadow-md relative mt-4 mb-8">
-                                            <div className="bg-white w-full shadow-lg rounded-xl ">
-                                                <h2 className="font-display font-medium text-gray-500 text-2xl text-left py-4 pl-4">
-                                                    Invitaciones pendientes
-                                                </h2>
-                                            </div>
-                                            <div className=" w-full overflow-auto">
-                                                <div className=" w-[200%] md:w-full">
-                                                    <div>
-                                                        <div className="relative">
-                                                            <div className=" flex justify-between py-3 ml-[52px] w-auto pr-5 relative">
-                                                                <button className="focus:outline-none bg-gray-300 text-white py-1 px-2 rounded-lg text-center text-[10px] md:text-sm capitalize">
-                                                                    Enviar
-                                                                </button>
-                                                            </div>
-                                                            <TableInvitations/>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        {table === 'pending' && (
+                                            <InvitationsPending/>
+                                        )}
+                                        {table === 'sending' && (
+                                            <InvitationsSend/>
+                                        )}
                                     </div>
                                 </div>
                             </div>
