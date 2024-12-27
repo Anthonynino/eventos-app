@@ -2,7 +2,7 @@ import { FaListUl, FaPlusCircle } from "react-icons/fa";
 import MinHeader from "../components/MinHeader";
 import NavbarApp from "../components/Navbar/NavbarApp";
 import LiCost from "../components/LiCost";
-import { FaPiggyBank } from "react-icons/fa6";
+import { FaCoins, FaPiggyBank } from "react-icons/fa6";
 
 const Budget = () => {
     return ( <>
@@ -10,7 +10,7 @@ const Budget = () => {
                 <div className="md:block relative">
                     <NavbarApp/>
                 </div>
-                <div className="w-[100%] bg-base overflow-auto overflow-y-scroll h-[calc(100vh-144px)]">
+                <div className="w-[100%] bg-[#f2f2f2] overflow-auto overflow-y-scroll h-[calc(100vh-144px)]">
                     <main className="w-full h-full">
                         <section className="bg-[#f2f2f2] w-full pb-6 pt-2 md:py-0 h-full">
                             <div className="max-w-screen-lg mx-auto inset-x-0 px-2 md:px-0 w-full ">
@@ -67,6 +67,32 @@ const Budget = () => {
                                                 <button className=" border-[#f7628c] border font-display focus:outline-none text-[#f7628c] text-xs bg-white px-3 py-1 rounded-lg my-2 hover:bg-primary hover:text-white transition">
                                                     Modificar presupuesto
                                                 </button>
+                                            </div>
+                                            <div className=" bg-white shadow-md rounded-xl grid place-items-center p-4">
+                                                <FaCoins className="w-12 h-12 text-[#f7628c] "/>
+                                                <p className="font-display text-gray-500 font-light text-md grid place-items-center">
+                                                    Coste final <br /> <span className="font-semibold text-lg text-center">US$0.00</span>
+                                                </p>
+                                                <div className=" w-full rounded-xl overflow-hidden flex my-2">
+                                                    <div className="w-1/2 bg-[#f7628c] py-1 px-3">
+                                                        <p className="text-xs font-display text-white">
+                                                            Pagado US$0.00
+                                                        </p>
+                                                    </div>
+                                                    <div className="w-1/2 bg-[#fbff4e] py-1 px-3">
+                                                        <p className="text-xs font-display text-[#f7628c]">
+                                                            Por pagar US$0.00
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="w-full pt-2">
+                                            <h2 className="font-display pb-2 text-xl text-gray-500 font-semibold text-center w-full">
+                                                Cuanto cuesta mi evento?
+                                            </h2>
+                                            <div className=" w-full h-full md:mb-2 md:h-max bg-white rounded-xl shadow-md flex justify-center  md:py-6 pt-6  ">
+                                                <img src="https://placehold.co/600x400" alt="" />
                                             </div>
                                         </div>
                                     </div>

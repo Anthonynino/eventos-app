@@ -22,7 +22,7 @@ const NavbarApp = () => {
                 <div className="max-w-screen-lg h-16 px-5 lg:px-0 w-full flex justify-between items-center mx-auto inset-x-0 ">
                     <span className="cursor-pointer items-center flex justify-center w-[130px] md:w-[208px] h-[60px] md:h-[64px] translate-x-[-14px] md:translate-x-[-160px]">
                         <svg width="300" height="39" viewBox="0 0 300 39" fill="none" xmlns="http://www.w3.org/2000/svg" className="hover:opacity-80 transition text-[#f7628c] w-full h-full object-contain">
-                            <g clip-path="url(#clip0)">
+                            <g clipPath="url(#clip0)">
                                 <path d="M25.86 22.2C25.86 27.07 22 29.89 14.58 29.89H0V1.69H13.78C20.78 1.69 24.45 4.63 24.45 9.02C24.477 10.3027 24.14 11.5668 23.4781 12.6659C22.8162 13.7649 21.8564 14.654 20.71 15.23C22.2264 15.6447 23.5591 16.5578 24.4933 17.8222C25.4275 19.0866 25.909 20.6287 25.86 22.2V22.2ZM6.49 6.61V13.25H13C16.18 13.25 17.92 12.12 17.92 9.91C17.92 7.7 16.15 6.61 13 6.61H6.49ZM19.3 21.51C19.3 19.13 17.48 18.01 14.1 18.01H6.49V25.01H14.1C17.48 25 19.3 23.93 19.3 21.51Z" fill="currentColor">
                                 </path>
                                 <path d="M78.82 0V29.89H72.82V27.39C71.9825 28.3466 70.9366 29.0983 69.7629 29.5872C68.5892 30.0761 67.319 30.2892 66.05 30.21C59.93 30.21 55.22 25.86 55.22 19.05C55.22 12.24 59.93 7.9 66.05 7.9C67.2563 7.83849 68.4616 8.04006 69.5822 8.49074C70.7029 8.94142 71.7121 9.63043 72.54 10.51V0H78.82ZM72.66 19.05C72.66 15.31 70.24 13.05 67.14 13.05C64.04 13.05 61.58 15.31 61.58 19.05C61.58 22.79 64 25.05 67.14 25.05C70.28 25.05 72.66 22.8 72.66 19.05Z" fill="currentColor">
