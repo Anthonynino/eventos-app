@@ -163,7 +163,9 @@ const NavbarApp = () => {
                             </li>
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
                                 <HiUsers className="w-6 h-6" />
+                                <Link href="invitados">
                                 <span className="text-sm">Invitados</span>
+                                </Link>
                             </li>
                             <li className="flex flex-col items-center cursor-pointer hover:text-primary transition">
                                 <FaSun className="w-6 h-6" />

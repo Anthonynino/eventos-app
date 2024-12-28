@@ -7,10 +7,12 @@ import { FaCoins, FaPiggyBank } from "react-icons/fa6";
 import { HiUsers } from "react-icons/hi2";
 import { MdOutlineTableRestaurant } from "react-icons/md";
 import ButtonAboutEvent from "../components/Buttons/ButtonAboutEvent";
+import NavbarDown from "../components/Navbar/NavbarDown";
 
 const ResumenEvent = () => {
     return ( <>
             <div className="w-[100vw] h-[100vh] bg-[#f2f2f2]">
+                <NavbarDown/>
                 <div className="md:block relative">
                     <NavbarApp/>
                 </div>
