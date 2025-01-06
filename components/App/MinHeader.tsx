@@ -1,4 +1,7 @@
+'use client';
+
 import { MdShare } from "react-icons/md";
+import { usePathname } from "next/navigation";
 
 interface MinHeaderProps {
     category: string;
@@ -6,11 +9,34 @@ interface MinHeaderProps {
 }
 
 const MinHeader: React.FC<MinHeaderProps> = ({category, name}) => {
+
+    const pathname = usePathname();
+
+    const getTitle = () => {
+        switch (pathname) {
+            case '/invitados':
+                return 'Invitados';
+            case '/mesas':
+                return 'Mesas';
+            case '/lista-regalos':
+                return 'Lista de regalos';
+            case '/presupuesto':
+                return 'Presupuesto';
+            case '/invitaciones':
+                    return 'Invitaciones';
+            case '/Itinerario':
+                return 'Itinearario';
+            default:
+                return 'Lista de regalos';
+        }
+    };
+
+
     return ( <>
         <div className="w-full h-14 bg-white rounded-xl shadow-lg flex items-center justify-between">
             <div className="flex md:flex-1 flex-col px-2 md:px-6 font-display">
                 <span className="text-gray-500 text-[18px] leading-[20px] font-semibold">
-                    Lista de regalos
+                    {getTitle()}
                 </span>
             </div>
             <div className="flex-1 md:flex-none md:w-[35%] h-[100%] flex flex-row-reverse md:flex-row items-center ">
