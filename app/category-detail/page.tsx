@@ -1,13 +1,13 @@
 "use client";
 import { FaChevronRight, FaFacebook, FaHeart, FaInstagram, FaPhone, FaPlus, FaQuestion, FaStar } from "react-icons/fa";
-import Header from "../components/Navbar/Header";
+import Header from "../../components/Common/Header";
 import { LuMessageCircle } from "react-icons/lu";
 import { IoLocationOutline } from "react-icons/io5";
-import Faq from "../components/FAQ";
-import Reviews from "../components/Reviews";
+import Faq from "../../components/Magazine/FAQ";
+import Reviews from "../../components/Magazine/Reviews";
 import { FaLocationDot } from "react-icons/fa6";
 import { TbWorld } from "react-icons/tb";
-import Footer from "../components/Footer";
+import Footer from "../../components/Common/Footer";
 
 const CategoryDetail = () => {
 
@@ -37,7 +37,7 @@ const CategoryDetail = () => {
                     </div>
                     <div className="lg:max-w-screen-lg mx-auto w-full inset-x-0 flex items-center justify-between pt-10 md:pt-0">
                         <div className="flex items-center gap-2">
-                            <img src="https://api.bodasdehoy.com/uploads/8589ec/novias-venus-logo-i640.webp" alt=""  className="object-cover w-24 h-24 rounded-full border-2 border-[#f7628c]"/>
+                            <img src="https://api.bodasdehoy.com/uploads/8589ec/novias-venus-logo-i640.webp" alt=""  className="object-cover w-24 h-24 rounded-full border-2 border-[#1ca6af]"/>
                             <div className="flex flex-col items-start md:items-start justify-center gap-y-2 ">
                                 <h1 className="md:text-4xl text-3xl text-[#49516f] pl-1">
                                     Titulo Producto
@@ -65,7 +65,7 @@ const CategoryDetail = () => {
                                     </div>
                                 </div>
                                 <div className="hidden md:block bg-gray-200 w-full h-max -mt-4 rounded-lg relative z-10 bg-opacity-30">
-                                    <div className="bg-white rounded-lg py-3 w-full border border-[#f7628c] flex items-center justify-between px-16">
+                                    <div className="bg-white rounded-lg py-3 w-full border border-[#1ca6af] flex items-center justify-between px-16">
                                         <div className="flex items-center text-gray-500 text-sm gap-2 hover:scale-105 transition transform cursor-pointer">
                                             <LuMessageCircle className="w-5 h-6"/>
                                             Opiniones
@@ -101,14 +101,14 @@ const CategoryDetail = () => {
                                                 <br />
                                             </span>
                                         </div>
-                                        <button className="text-[#f7628c] text-sm w-full justify-end flex gap-2 py-4 w-max float-right items-center ">
+                                        <button className="text-[#1ca6af] text-sm w-full justify-end flex gap-2 py-4 w-max float-right items-center ">
                                           <FaPlus/>  Ver más
                                         </button>
                                     </div>
                                     <hr/>
                                     <div>
                                         <div className="flex items-center gap-3 pb-6">
-                                            <FaQuestion className="text-[#f7628c] w-20 h-14"/>
+                                            <FaQuestion className="text-[#1ca6af] w-20 h-14"/>
                                             <h2 className="text-gray-500 font-display text-xl">
                                                 Preguntas Frecuentes
                                             </h2>
@@ -122,7 +122,7 @@ const CategoryDetail = () => {
                                     </div>
                                     <Reviews/>
                                     <div className="flex items-center gap-3">
-                                        <FaLocationDot className="w-10 h-10 text-[#f7628c]" />
+                                        <FaLocationDot className="w-10 h-10 text-[#1ca6af]" />
                                         <h2 className="text-lg text-gray-500">
                                             Como llegar
                                         </h2>
@@ -157,18 +157,18 @@ const CategoryDetail = () => {
                                                 </div>
                                             </div>
                                             <div className="flex flex-col items-center justify-between w-full py-3">
-                                                <span className="flex items-center text-[#f7628c] text-sm gap-2 py-2 justify-start w-full">
+                                                <span className="flex items-center text-[#1ca6af] text-sm gap-2 py-2 justify-start w-full">
                                                     <FaHeart className="w-5 h-5"/>
                                                     Para enviar un mensaje
                                                 </span>
-                                                <button className="flex flex-col items-center text-white bg-[#f7628c] w-full mt-2 text-sm p-2 flex justify-center rounded-lg hover:opacity-90 transition hover:text-gray-100 gap-1">
+                                                <button className="flex flex-col items-center text-white bg-[#1ca6af] w-full mt-2 text-sm p-2 flex justify-center rounded-lg hover:opacity-90 transition hover:text-gray-100 gap-1">
                                                     Debes iniciar sesion
                                                 </button>
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-10 text-xs justify-between w-full border-b border-gray-100 py-2 overflow-hidden relative">
                                             <div className="">
-                                                <TbWorld className="w-5 h-5 text-[#f7628c] "/>
+                                                <TbWorld className="w-5 h-5 text-[#1ca6af] "/>
                                             </div>
                                             <div className="w-full flex items-center justify-end cursor-pointer">
                                                 <p className="text-tertiary truncate">
@@ -178,7 +178,7 @@ const CategoryDetail = () => {
                                         </div>
                                         <div className="flex items-center gap-10 text-xs justify-between w-full border-b border-gray-100 py-2 overflow-hidden relative">
                                             <div className="">
-                                                <FaPhone className="w-4 h-4 text-[#f7628c] "/>
+                                                <FaPhone className="w-4 h-4 text-[#1ca6af] "/>
                                             </div>
                                             <div className="w-full flex items-center justify-end cursor-pointer">
                                                 <p className="text-tertiary truncate">
@@ -188,7 +188,7 @@ const CategoryDetail = () => {
                                         </div>
                                         <div className="flex items-center gap-10 text-xs justify-between w-full border-b border-gray-100 py-2 overflow-hidden relative">
                                             <div className="">
-                                                <FaFacebook className="w-5 h-5 text-[#f7628c] "/>
+                                                <FaFacebook className="w-5 h-5 text-[#1ca6af] "/>
                                             </div>
                                             <div className="w-full flex items-center justify-end cursor-pointer">
                                                 <p className="text-tertiary truncate">
@@ -198,7 +198,7 @@ const CategoryDetail = () => {
                                         </div>
                                         <div className="flex items-center gap-10 text-xs justify-between w-full border-b border-gray-100 py-2 overflow-hidden relative">
                                             <div className="">
-                                                <FaInstagram className="w-5 h-5 text-[#f7628c] "/>
+                                                <FaInstagram className="w-5 h-5 text-[#1ca6af] "/>
                                             </div>
                                             <div className="w-full flex items-center justify-end cursor-pointer">
                                                 <p className="text-tertiary truncate">

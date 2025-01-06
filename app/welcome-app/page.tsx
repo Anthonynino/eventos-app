@@ -1,5 +1,5 @@
-import Header from "../components/Navbar/Header";
-import Footer from "../components/Footer";
+import Header from "../../components/Common/Header";
+import Footer from "../../components/Common/Footer";
 
 
 
@@ -10,7 +10,7 @@ const WelcomeApp = () => {
       <div className="flex flex-col bg-[#f2f2f2] items-center justify-between min-h-screen p-8 pb-20 gap-16 sm:p-20 font-sans">
           <div className="sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg md:pt-16 mx-auto ">
             <div className="mb-14 px-10 md:px-0">
-                <div className="md:pl-[37%] text-[#f7628c] text-end ">
+                <div className="md:pl-[37%] text-[#1ca6af] text-end ">
                 Obtén una visión panorámica de cada acción en la organización de tu evento. Gestiona tu planificación y garantiza que tu boda, fiesta, ceremonia, 
                 celebración o actividad corporativa sea un éxito.
                 </div>
@@ -22,14 +22,14 @@ const WelcomeApp = () => {
                         <img src="https://www.bodasdehoy.com/EventoOrganizador.png" alt=""  width={350}/>
                     </div>
                     <div className="space-y-4 flex flex-col justify-center items-center">
-                        <p className="text-[#f7628c]">
+                        <p className="text-[#1ca6af]">
                         Esta poderosa herramienta te ayuda a hacer el seguimiento detallado del avance de tu celebración de forma automática
                          y con la precisión propia de un reloj suizo.
                         </p>
-                        <p className="text-[#f7628c] font-semibold">
+                        <p className="text-[#1ca6af] font-semibold">
                         Coordina desde tu móvil todas las acciones para un evento memorable.
                         </p>
-                        <button className=" text-[#f7628c] bg-[#FBFF4E] py-[8px] px-[22px] shadow-md">CREA GRATIS TU EVENTO</button>
+                        <button className=" text-[#1ca6af] bg-[#FBFF4E] py-[8px] px-[22px] shadow-md">CREA GRATIS TU EVENTO</button>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@ const WelcomeApp = () => {
       <div className="relative">
               <div className="bg-white md:pb-20">
                   <div className="py-20 px-10 md:px-0 xl:max-w-screen-lg 2xl:max-w-screen-lg mx-auto flex flex-col justify-center items-center space-y-10">
-                      <div className="text-[#f7628c] md:text-2xl text-xl text-center font-semibold md:w-[70%] ">
+                      <div className="text-[#1ca6af] md:text-2xl text-xl text-center font-semibold md:w-[70%] ">
                       Logra un evento perfecto con la herramienta que integra cada faceta de la organización
                       </div>
                       <div className="space-y-4 text-gray-500 ">
@@ -73,7 +73,7 @@ const WelcomeApp = () => {
                                 </div>
                             </div>
                       </div>
-                      <div className="text-[#f7628c] text-center font-semibold md:w-[75%] ">
+                      <div className="text-[#1ca6af] text-center font-semibold md:w-[75%] ">
                       Está claro que eres la mejor en lo que haces, pero, ¿qué sucede si tienes
                        la posibilidad de obtener los mismos resultados con procesos menos estresantes?
                       </div>
@@ -85,7 +85,7 @@ const WelcomeApp = () => {
               <div className="sm:max-w-screen-sm  md:max-w-screen-md lg:max-w-screen-lg md:pt-60 mx-auto ">
                   <div className="flex justify-center my-10 md:mt-0 px-10 md:px-0 ">
                       <p className="text-gray-500 md:w-[65%] text-center text-2xl md:text-3xl">
-                      Navega dentro de tu <span className="text-[#f7628c]"> EventosOrganizador </span>
+                      Navega dentro de tu <span className="text-[#1ca6af]"> EventosOrganizador </span>
                       y descubre el nuevo significado de llevar la batuta en la planeación de eventos
                       </p>
                   </div>
@@ -149,13 +149,13 @@ const WelcomeApp = () => {
                                 <div className="grid md:grid-cols-2 gap-4 my-20 px-5 md:px-0 ">
                                     <div className="text-3xl md:text-4xl flex items-center justify-center text-center md:text-start mb-5 md:mb-0">
                                         <p className="text-gray-500">
-                                            el <span className="text-[#f7628c]">EventosOrganizador</span> es para ti si: <br />
+                                            el <span className="text-[#1ca6af]">EventosOrganizador</span> es para ti si: <br />
                                         </p>
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <img src="https://www.bodasdehoy.com/noviaApp.png" alt="" className="md:w-36 w-24 h-24 md:h-full"/>
                                         <div className="space-y-2 text-sm flex flex-col items-center justify-center ">
-                                            <p className="font-bold text-[#f7628c]">
+                                            <p className="font-bold text-[#1ca6af]">
                                             Estás próxima a casarte y deseas estar enterada de cada paso en el avance de la planificación. 
                                             </p>
                                             <p className="text-gray-500">
@@ -166,7 +166,7 @@ const WelcomeApp = () => {
                                     <div className="flex items-center gap-2">
                                         <img src="https://www.bodasdehoy.com/calendarioApp.png" alt="" className="md:w-36 w-24 h-24 md:h-full" />
                                         <div className="space-y-2 text-sm flex flex-col items-center justify-center ">
-                                            <p className="font-bold text-[#f7628c]">
+                                            <p className="font-bold text-[#1ca6af]">
                                             Eres una apasionada de la organización de eventos. 
                                             </p>
                                             <p className="text-gray-500">
@@ -177,7 +177,7 @@ const WelcomeApp = () => {
                                     <div className="flex items-center gap-2">
                                         <img src="https://www.bodasdehoy.com/hojaApp.png" alt="" className="md:w-36 w-24 h-24 md:h-full" />
                                         <div className="space-y-2 text-sm flex flex-col items-center justify-center ">
-                                            <p className="font-bold text-[#f7628c]">
+                                            <p className="font-bold text-[#1ca6af]">
                                             Eres una organizadora de eventos corporativos o wedding planer profesional.
                                             </p>
                                             <p className="text-gray-500">
@@ -188,10 +188,10 @@ const WelcomeApp = () => {
                                 </div>
                             </div>
                             <div className="flex flex-col justify-center items-center space-y-5 mb-10 px-10">
-                                <p className="text-[#f7628c] text-xl font-semibold">
+                                <p className="text-[#1ca6af] text-xl font-semibold">
                                     Inicia tu prueba gratis Ahora
                                </p>
-                               <button className=" text-[#f7628c] bg-[#FBff4e] py-[8px] px-[22px] shadow-md">CREAR EVENTO</button>                                
+                               <button className=" text-[#1ca6af] bg-[#FBff4e] py-[8px] px-[22px] shadow-md">CREAR EVENTO</button>                                
                             </div>
                         </div>
                   </div>
@@ -202,7 +202,7 @@ const WelcomeApp = () => {
                     <div className="grid md:grid-cols-2 gap-10">
                         <div className="flex justify-end items-center text-end ">
                             <p className="md:w-[90%] text-4xl text-gray-500 ">
-                            ¿Cómo integras el <span className="text-[#f7628c]">EventosOrganizador</span>  en la planificación de tu evento?
+                            ¿Cómo integras el <span className="text-[#1ca6af]">EventosOrganizador</span>  en la planificación de tu evento?
                             </p>
                         </div>
                         <p className="text-md px-5 md:px-0 text-gray-600">
@@ -218,7 +218,7 @@ const WelcomeApp = () => {
                     </div>
                     <div className="grid md:w-[85%] md:grid-cols-2 gap-10 ">
                         <div>
-                            <p className="text-[#f7628c] text-lg">
+                            <p className="text-[#1ca6af] text-lg">
                                 Invitados
                             </p>
                             <p className="text-gray-600 md:w-[85%]*">
@@ -226,7 +226,7 @@ const WelcomeApp = () => {
                             </p>
                         </div>
                         <div>
-                            <p className="text-[#f7628c] text-lg">
+                            <p className="text-[#1ca6af] text-lg">
                                 Las mesas
                             </p>
                             <p className="text-gray-600 md:w-[85%]*">
@@ -235,7 +235,7 @@ const WelcomeApp = () => {
                             </p>
                         </div>
                         <div>
-                            <p className="text-[#f7628c] text-lg">
+                            <p className="text-[#1ca6af] text-lg">
                                 Lista de regalos
                             </p>
                             <p className="text-gray-600 md:w-[85%]*">
@@ -243,7 +243,7 @@ const WelcomeApp = () => {
                             </p>
                         </div>
                         <div>
-                            <p className="text-[#f7628c] text-lg">
+                            <p className="text-[#1ca6af] text-lg">
                                 Manejo amigable de tu presupuesto
                             </p>
                             <p className="text-gray-600 md:w-[85%]*">
@@ -251,7 +251,7 @@ const WelcomeApp = () => {
                             </p>
                         </div>
                         <div>
-                            <p className="text-[#f7628c] text-lg">
+                            <p className="text-[#1ca6af] text-lg">
                                 Invitaciones
                             </p>
                             <p className="text-gray-600 md:w-[85%]*">
@@ -259,7 +259,7 @@ const WelcomeApp = () => {
                             </p>
                         </div>
                         <div>
-                            <p className="text-[#f7628c] text-lg">
+                            <p className="text-[#1ca6af] text-lg">
                                 Chat de invitados
                             </p>
                             <p className="text-gray-600 md:w-[85%]*">
@@ -267,7 +267,7 @@ const WelcomeApp = () => {
                             </p>
                         </div>
                         <div>
-                            <p className="text-[#f7628c] text-lg">
+                            <p className="text-[#1ca6af] text-lg">
                                 Web personalizadas
                             </p>
                             <p className="text-gray-600 md:w-[85%]*">
@@ -275,7 +275,7 @@ const WelcomeApp = () => {
                             </p>
                         </div>
                         <div>
-                            <p className="text-[#f7628c] text-lg">
+                            <p className="text-[#1ca6af] text-lg">
                                 Marketplace
                             </p>
                             <p className="text-gray-600 md:w-[85%]*">
@@ -289,7 +289,7 @@ const WelcomeApp = () => {
           </div>    
           <div className="sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg mx-auto ">
                 <div className="flex flex-col justify-center items-center gap-5 md:py-20 py-10 px-10 md:px-0">
-                    <p className="text-[#f7628c] text-center text-xl md:w-[57%] font-semibold ">
+                    <p className="text-[#1ca6af] text-center text-xl md:w-[57%] font-semibold ">
                     Facilita la gestión de la organización de tu evento desde una sola herramienta
                     </p>
                     <p className="text-gray-600 md:w-[80%]">
@@ -300,7 +300,7 @@ const WelcomeApp = () => {
                     <br />
                     <br />
                     Pero ¿Por qué tener diversas herramientas para organizar tus eventos si puedes concentrar todas tus acciones en una solo sitio?
-                    <span className="text-[#f7628c]">
+                    <span className="text-[#1ca6af]">
                     No pagues de más por muchas aplicaciones, cuando puedes hacer todo lo que necesitas GRATIS.
                     </span>
                     <br />
@@ -320,7 +320,7 @@ const WelcomeApp = () => {
                     <div className="grid md:grid-cols-2 gap-10 xl:max-w-screen-lg 2xl:max-w-screen-lg mx-auto px-10 md:px-0 ">
                         <div className="space-y-5 flex flex-col justify-center md:items-center justify-items-center ">
                             <img src="https://www.bodasdehoy.com/easy.png" alt="" />
-                            <p className="text-gray-500 text-center md:px-0 md:pl-20 "><span className="text-[#f7628c]">Ahora es más fácil</span> coordinar los detalles de tu evento como un mecanismo perfecto
+                            <p className="text-gray-500 text-center md:px-0 md:pl-20 "><span className="text-[#1ca6af]">Ahora es más fácil</span> coordinar los detalles de tu evento como un mecanismo perfecto
                             </p>
                         </div>
                         <div className="space-y-10 ">
@@ -329,7 +329,7 @@ const WelcomeApp = () => {
                             <br />
                             <br />
                             Todas las automatizaciones que coordinan por ti el seguimiento en tiempo real la organización de tu evento.
-                            <span className="text-[#f7628c] font-semibold">Accede GRATIS</span>
+                            <span className="text-[#1ca6af] font-semibold">Accede GRATIS</span>
                             a está poderosa herramienta y amplia la posibilidad de éxito de tu evento con tu EventosOrganizador.
                             <br />
                             <br />
@@ -339,7 +339,7 @@ const WelcomeApp = () => {
                             No pagues más por muchas aplicaciones o software de planificación, cuando puedes hacer toda la magia desde una misma herramienta.
                             
                             </p>
-                            <button className=" text-[#f7628c] bg-[#FBFF4E] py-[8px] px-[22px] shadow-md">CREAR EVENTO</button>
+                            <button className=" text-[#1ca6af] bg-[#FBFF4E] py-[8px] px-[22px] shadow-md">CREAR EVENTO</button>
                         </div>
                     </div>
                 </div>

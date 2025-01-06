@@ -17,7 +17,7 @@ const LoginApp = () => {
                 <div className=" flex flex-col items-center gap-4 w-full px-10 md:px-0 sm:w-3/4 md:w-2/3  ">
                     <div className="h-full">
                         <div className="flex flex-col items-center justify-center w-full">
-                            <svg width="300" height="39" viewBox="0 0 300 39" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-auto text-[#f7628c] h-10">
+                            <svg width="300" height="39" viewBox="0 0 300 39" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-auto text-[#1ca6af] h-10">
                                 <g clip-path="url(#clip0)">
                                     <path d="M25.86 22.2C25.86 27.07 22 29.89 14.58 29.89H0V1.69H13.78C20.78 1.69 24.45 4.63 24.45 9.02C24.477 10.3027 24.14 11.5668 23.4781 12.6659C22.8162 13.7649 21.8564 14.654 20.71 15.23C22.2264 15.6447 23.5591 16.5578 24.4933 17.8222C25.4275 19.0866 25.909 20.6287 25.86 22.2V22.2ZM6.49 6.61V13.25H13C16.18 13.25 17.92 12.12 17.92 9.91C17.92 7.7 16.15 6.61 13 6.61H6.49ZM19.3 21.51C19.3 19.13 17.48 18.01 14.1 18.01H6.49V25.01H14.1C17.48 25 19.3 23.93 19.3 21.51Z" fill="currentColor">
                                     </path>
@@ -115,15 +115,15 @@ const LoginApp = () => {
                                     <IoEyeOutline/>
                                 </div>
                             </span>
-                            <div className="text-sm text-[#f7628c] w-full text-left hover:text-gray-300 transition cursor-pointer">
+                            <div className="text-sm text-[#1ca6af] w-full text-left hover:text-gray-300 transition cursor-pointer">
                             Olvidé mi contraseña
                             </div>
-                            <button className="hover:opacity-90 transition focus:outline-none focus:ring-4 focus:ring-pink-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 text-white bg-[#f7628c]">
+                            <button className="hover:opacity-90 transition focus:outline-none focus:ring-4 focus:ring-pink-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 text-white bg-[#1ca6af]">
                                 Iniciar sesion
                             </button>
                         </form>
                         <h2 className="font-light text-tertiary flex gap-2 items-center text-sm ">
-                        ¿No dispones de una cuenta? <span className="text-[#f7628c] font-semibold cursor-pointer hover:text-gray-900 transition">Registrate</span>
+                        ¿No dispones de una cuenta? <span className="text-[#1ca6af] font-semibold cursor-pointer hover:text-gray-900 transition">Registrate</span>
                         </h2>
                     </div>
                 </div>

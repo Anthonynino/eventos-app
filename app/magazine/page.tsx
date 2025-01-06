@@ -1,9 +1,9 @@
-import ArticleMagazine from "../components/ArticleMagazine";
-import CardSliderMazine from "../components/Cards/CardMagazineSlider";
-import CardNotice from "../components/Cards/CardNotice";
-import Footer from "../components/Footer";
-import Header from "../components/Navbar/Header";
-import Newsletter from "../components/Newsletter";
+import ArticleMagazine from "../../components/Magazine/ArticleMagazine";
+import CardSliderMazine from "../../components/Cards/CardMagazineSlider";
+import CardNotice from "../../components/Cards/CardNotice";
+import Footer from "../../components/Common/Footer";
+import Header from "../../components/Common/Header";
+import Newsletter from "../../components/Common/Newsletter";
 
 const MagazinePage = () => {
     return ( 
@@ -11,7 +11,7 @@ const MagazinePage = () => {
             <Header />
             <div className="w-full -mt-0 md:mt-0 md:pt-8 grid gap-6">
                 <div className="max-w-screen-lg mx-auto inset-x-0 grid gap-6 w-full mt-20 ">
-                    <h1 className="text-5xl md:text-6xl font-italiana font-normal text-[#f7628c] w-full text-center"> 
+                    <h1 className="text-5xl md:text-6xl font-italiana font-normal text-[#1ca6af] w-full text-center"> 
                         Magazine
                     </h1>
                     <div className="w-[95%] md:w-2/3 mx-auto inset-x-0 relative z-20">
@@ -24,7 +24,7 @@ const MagazinePage = () => {
                                     </svg>
                                 </button>
                         </div>
-                        <span className="bg-[#F7628C] w-14 h-full rounded-full absolute top-0 right-0 flex items-center justify-center">
+                        <span className="bg-[#1ca6af] w-14 h-full rounded-full absolute top-0 right-0 flex items-center justify-center">
                                 <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-white w-6 h-6">
                                     <path d="M23.0065 22.2154L17.7686 16.9472C19.5414 14.9941 20.4848 12.4203 20.3944 9.77737C20.306 7.1344 19.1916 4.63178 17.289 2.80522C15.3864 0.978661 12.853 -0.0295042 10.2232 0.000147758C7.59538 0.0297997 5.08157 1.09331 3.22225 2.96336C1.36293 4.83341 0.305518 7.36173 0.274071 10.0067C0.244589 12.6497 1.245 15.2017 3.06108 17.1133C4.87716 19.0248 7.36542 20.1457 9.99323 20.2366C12.621 20.3275 15.1801 19.3787 17.1219 17.5956L22.3618 22.8657C22.4483 22.9527 22.5643 23.0001 22.6842 23.0001C22.806 23.0001 22.922 22.9507 23.0065 22.8657C23.093 22.7787 23.1401 22.6621 23.1401 22.5415C23.1401 22.4209 23.093 22.3023 23.0065 22.2154ZM1.21159 10.1332C1.21159 8.31454 1.74816 6.53938 2.75251 5.02714C3.75685 3.51489 5.18377 2.3387 6.85441 1.64286C8.52504 0.947032 10.3608 0.765167 12.1336 1.11901C13.9065 1.47286 15.5338 2.34858 16.8134 3.6335C18.0909 4.91841 18.9616 6.55717 19.3134 8.34024C19.6652 10.1233 19.4844 11.9716 18.7926 13.6499C18.1007 15.3302 16.9293 16.7653 15.4277 17.7755C13.9241 18.7856 12.1592 19.3253 10.3509 19.3253C7.92754 19.3233 5.60634 18.3527 3.89247 16.6309C2.17663 14.9072 1.21356 12.5706 1.21159 10.1332Z" fill="currentColor">
                                     </path>
@@ -35,7 +35,7 @@ const MagazinePage = () => {
                             <ArticleMagazine/>
                     </div>
                     <div className="w-full flex items-center justify-center flex-col pt-6 z-10 space-y-9">
-                        <h2 className="text-[#f7628c] text-xl font-bold  px-5 md:px-0 z-20 relative undefined">
+                        <h2 className="text-[#1ca6af] text-xl font-bold  px-5 md:px-0 z-20 relative undefined">
                             Recomendados <span className="font-light">Para tu boda</span>
                         </h2>
                         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-5 pb-10">
@@ -107,7 +107,7 @@ const MagazinePage = () => {
                 </div>
                 <div className="grid md:grid-cols-3 max-w-screen-lg w-full mx-auto inset-x-0 gap-6 px-5 md:px-0 overflow-hidden ">
                     <div className=" col-span-2 w-full pb-6 ">
-                        <h3 className=" text-lg text-[#f7628c] font-semibold">
+                        <h3 className=" text-lg text-[#1ca6af] font-semibold">
                             Ultimos articulos
                         </h3>
                         <div className=" wrapper transition">
@@ -122,7 +122,7 @@ const MagazinePage = () => {
                     </div>
                     <div className=" w-full hidden md:block ">
                         <div className="... w-full bg-white p-7 shadow-md rounded-xl">
-                            <h3 className="font-semibold text-lg text-[#f7628c] border-b border-gray-100 pb-4">
+                            <h3 className="font-semibold text-lg text-[#1ca6af] border-b border-gray-100 pb-4">
                                 Top 5 articulos mas leidos
                             </h3>
                             <button className="py-4 border-b border-gray-100 text-sm text-gray-500 hover:text-gray-700 cursor-pointer">

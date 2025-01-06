@@ -1,10 +1,10 @@
-import MinHeader from "../components/MinHeader";
-import NavbarApp from "../components/Navbar/NavbarApp";
+import MinHeader from "../../components/App/MinHeader";
+import NavbarApp from "../../components/Common/NavbarApp";
 import { FaClock, FaPlusCircle } from "react-icons/fa";
 import { IoCheckmarkCircle } from "react-icons/io5";
 import { FaCircleXmark } from "react-icons/fa6";
 import { PiPicnicTable } from "react-icons/pi";
-import GuestTable from "../components/Guest/GuestTable";
+import GuestTable from "../../components/Guest/GuestTable";
 
 const Guest = () => {
     return ( <>
@@ -17,13 +17,13 @@ const Guest = () => {
                     <section className="bg-[#f2f2f2] w-full pb-6 pt-2 md:py-0">
                         <div className="max-w-screen-lg mx-auto inset-x-0 w-full px-2 md:px-0 gap-4 relative">
                             <MinHeader name="Asd" category="Cumpleanos"/>
-                            <div className="w-full flex flex-col gap-4 md:grid md:grid-cols-6 md:my-2 py-1 md:border-b-4 md:border-[#f7628c] relative">
+                            <div className="w-full flex flex-col gap-4 md:grid md:grid-cols-6 md:my-2 py-1 md:border-b-4 md:border-[#1ca6af] relative">
                                 <div className="absolute* md:static z-10 translate-y-[6px] md:translate-y-0 flex gap-10 items-center justify-center h-full w-full md:col-span-2 md:py-4">
                                     <div className="flex gap-1 items-center justify-end ">
-                                        <p className="font-display font-semibold text-2xl md:text-4xl text-[#f7628c]">
+                                        <p className="font-display font-semibold text-2xl md:text-4xl text-[#1ca6af]">
                                             0
                                         </p>
-                                        <p className="font-display text-sm md:text-[16px] text-[#f7628c]">
+                                        <p className="font-display text-sm md:text-[16px] text-[#1ca6af]">
                                             Invitados
                                         </p>
                                     </div>
@@ -60,7 +60,7 @@ const Guest = () => {
                                         </span>
                                     </div>
                                     <div className="flex gap-2 items-center justify-center">
-                                        <FaCircleXmark className="w-8 h-8 text-[#f7628c]"/>
+                                        <FaCircleXmark className="w-8 h-8 text-[#1ca6af]"/>
                                     <span>
                                             <p className="font-display md:text-lg font-semibold text-gray-700 leading-5">
                                                 0 de 0
@@ -71,7 +71,7 @@ const Guest = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <div className="hidden md:flex w-40 h-40 bg-[#f7628c] rounded-full col-span-1 absolute right-0 flex-col items-center justify-center z-20">
+                                <div className="hidden md:flex w-40 h-40 bg-[#1ca6af] rounded-full col-span-1 absolute right-0 flex-col items-center justify-center z-20">
                                     <PiPicnicTable className="text-white w-20 h-14" />
                                     <p className="font-display text-md font-semibold text-white first-letter:capitalize">
                                         Sentar <span className="font-normal">Invitados</span>
@@ -84,19 +84,19 @@ const Guest = () => {
                             <div className="bg-white min-h-full w-full shadow-lg rounded-xl h-full md:px-6 pt-2 md:pt-6 pb-28 mb-32 md:mb-0 md:p-12 relative">
                                 <div className="flex items-center justify-between relative">
                                     <div className="flex gap-2 items-center mt-1 mb-3 md:mb-5 mx-2">
-                                        <button className="focus:outline-none bg-white px-2 md:px-6 py-1 flex gap-1 md:gap-2 items-center justify-between text-[#f7628c] font-display font-semibold text-[10px] md:text-sm rounded-lg hover:bg-[#f7628c] hover:text-white transition border border-[#f7628c] md:bg-[#f7628c] md:text-white md:hover:bg-white md:hover:text-[#f7628c] capitalize">
+                                        <button className="focus:outline-none bg-white px-2 md:px-6 py-1 flex gap-1 md:gap-2 items-center justify-between text-[#1ca6af] font-display font-semibold text-[10px] md:text-sm rounded-lg hover:bg-[#1ca6af] hover:text-white transition border border-[#1ca6af] md:bg-[#1ca6af] md:text-white md:hover:bg-white md:hover:text-[#1ca6af] capitalize">
                                             <FaPlusCircle />
                                             invitados
                                         </button>
-                                        <button className="focus:outline-none bg-white px-2 md:px-6 py-1 flex gap-1 md:gap-2 items-center justify-between text-[#f7628c] font-display font-semibold text-[10px] md:text-sm rounded-lg hover:bg-[#f7628c] hover:text-white transition border border-[#f7628c] capitalize">
+                                        <button className="focus:outline-none bg-white px-2 md:px-6 py-1 flex gap-1 md:gap-2 items-center justify-between text-[#1ca6af] font-display font-semibold text-[10px] md:text-sm rounded-lg hover:bg-[#1ca6af] hover:text-white transition border border-[#1ca6af] capitalize">
                                             <FaPlusCircle />
                                             Grupo
                                         </button>
-                                        <button className="focus:outline-none bg-white px-2 md:px-6 py-1 flex gap-1 md:gap-2 items-center justify-between text-[#f7628c] font-display font-semibold text-[10px] md:text-sm rounded-lg hover:bg-[#f7628c] hover:text-white transition border border-[#f7628c] capitalize">
+                                        <button className="focus:outline-none bg-white px-2 md:px-6 py-1 flex gap-1 md:gap-2 items-center justify-between text-[#1ca6af] font-display font-semibold text-[10px] md:text-sm rounded-lg hover:bg-[#1ca6af] hover:text-white transition border border-[#1ca6af] capitalize">
                                             <FaPlusCircle />
                                             Menu
                                         </button>
-                                        <button className="focus:outline-none bg-white px-2 md:px-6 py-1 flex gap-1 md:gap-2 items-center justify-between text-[#f7628c] font-display font-semibold text-[10px] md:text-sm rounded-lg hover:bg-[#f7628c] hover:text-white transition border border-[#f7628c] capitalize">
+                                        <button className="focus:outline-none bg-white px-2 md:px-6 py-1 flex gap-1 md:gap-2 items-center justify-between text-[#1ca6af] font-display font-semibold text-[10px] md:text-sm rounded-lg hover:bg-[#1ca6af] hover:text-white transition border border-[#1ca6af] capitalize">
                                             Exportar
                                         </button>
                                     </div>

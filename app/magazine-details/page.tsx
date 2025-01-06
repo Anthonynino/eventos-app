@@ -1,10 +1,10 @@
 import { FaChevronRight } from "react-icons/fa";
-import Footer from "../components/Footer";
-import Header from "../components/Navbar/Header";
-import CategoryMagazine from "../components/Buttons/CategoryMagazine";
+import Footer from "../../components/Common/Footer";
+import Header from "../../components/Common/Header";
+import CategoryMagazine from "../../components/Buttons/CategoryMagazine";
 import { GoTag } from "react-icons/go";
-import Tag from "../components/Buttons/Tag";
-import Newsletter from "../components/Newsletter";
+import Tag from "../../components/Buttons/Tag";
+import Newsletter from "../../components/Common/Newsletter";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 
 const MagazineDetails = () => {
@@ -46,7 +46,7 @@ const MagazineDetails = () => {
                     <div className="w-full relative -mt-16 md:mt-0">
                         <div className="relative w-full flex items-center justify-end h-full overflow-hidden pb-28 md:pb-0 ">
                             <div className="w-5/6 mx-auto md:mx-0 inset-x-0 md:w-1/2 p-8 bg-white absolute md:top-0 my-auto md:inset-y-0 bottom-0 h-max left-0 rounded-xl">
-                                <h1 className="text-[#41596f] text-xl font-semibold border-b pb-4 border-[#f7628c]">Musica para boda religiosa: 10 canciones que no pueden faltar</h1>
+                                <h1 className="text-[#41596f] text-xl font-semibold border-b pb-4 border-[#1ca6af]">Musica para boda religiosa: 10 canciones que no pueden faltar</h1>
                                 <p className="text-sm text-gray-500 pt-4"> hoy traemos a vosotros eso que estabas buscando para elegir vuestra música </p>
                                 <p className="absolute bottom-0 transform pt-3 translate-y-full text-xs text-gray-500 italic">Por Andrea Cardozo</p>
                             </div>
@@ -88,7 +88,7 @@ const MagazineDetails = () => {
                                     </p>
                                 </span>
                                 <div className="flex items-center flex-wrap gap-2 pt-8 ">
-                                    <GoTag className="text-[#f7628c] w-6 h-6 "/>
+                                    <GoTag className="text-[#1ca6af] w-6 h-6 "/>
                                     <Tag/>
                                     <Tag/>
 
@@ -102,12 +102,12 @@ const MagazineDetails = () => {
                                     <button className="hidden p-1 bg-color-base rounded-full z-30 right-16 absolute">
                                     </button>
                                 </div>
-                                <span className="bg-[#f7628c] w-14 h-full rounded-full absolute top-0 right-0 flex items-center justify-center">
+                                <span className="bg-[#1ca6af] w-14 h-full rounded-full absolute top-0 right-0 flex items-center justify-center">
                                     <HiMagnifyingGlass className="text-white w-6 h-6"/>
                                 </span>
                             </div>
                             <div className="... w-full bg-white p-7 shadow-md rounded-xl">
-                            <h3 className="font-semibold text-lg text-[#f7628c] border-b border-gray-100 pb-4">
+                            <h3 className="font-semibold text-lg text-[#1ca6af] border-b border-gray-100 pb-4">
                                 Top 5 articulos mas leidos
                             </h3>
                             <button className="py-4 border-b border-gray-100 text-sm text-gray-500 hover:text-gray-700 cursor-pointer">

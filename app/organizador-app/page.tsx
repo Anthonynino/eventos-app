@@ -1,10 +1,10 @@
 
 "use client"
-import NavbarApp from "../components/Navbar/NavbarApp";
+import NavbarApp from "../../components/Common/NavbarApp";
 import { FaRegSquarePlus } from "react-icons/fa6";
 
-import CardEvent from "../components/Cards/CardEvent";
-import Modal from "../components/Modal/NewEvent";
+import CardEvent from "../../components/Cards/CardEvent";
+import Modal from "../../components/Modal/NewEvent";
 import { useState } from "react";
 
 
@@ -24,17 +24,17 @@ const AppEvents = () => {
                         <div className=" banner bg-[#f2f2f2] w-full flex justify-center h-[60%] md:h-[calc(100%-200px-50px)] md:min-h-[300px] px-5 md:px-0 overflow-hidden relative mb-1">
                             <div className=" md:max-w-screen-lg 2xl:max-w-screen-xl w-full grid md:grid-cols-5 h-80">
                                 <div className=" flex flex-col justify-center relative py-10 md:py-0 col-span-2">
-                                    <h2 className=" font-display font-medium text-2xl md:text-5xl tracking-tight text-[#f7628c] mb-1.5">
+                                    <h2 className=" font-display font-medium text-2xl md:text-5xl tracking-tight text-[#1ca6af] mb-1.5">
                                         Organiza tus eventos
                                     </h2>
                                     <h3 className=" font-display font-medium text-1xl md:text-3xl tracking-tight	text-gray-500 mb-1.5">
                                     Comparte, colabora e invita
                                     </h3>
-                                    <h1 className=" font-display font-base text-md tracking-tight text-[#f7628c]">
+                                    <h1 className=" font-display font-base text-md tracking-tight text-[#1ca6af]">
                                     Planifica tus celebraciones <span className="font-semibold">Sin estres</span>
                                     </h1>
                                     <span className=" flex gap-2 justify-start items-end">
-                                        <button onClick={openModal} className=" mt-4 bg-[#f7628c] font-display font-medium text-white px-5 md:px-24 py-2 rounded-lg  box-border hover:bg-gray-200 transition focus:outline-none z-20">
+                                        <button onClick={openModal} className=" mt-4 bg-[#1ca6af] font-display font-medium text-white px-5 md:px-24 py-2 rounded-lg  box-border hover:bg-gray-200 transition focus:outline-none z-20">
                                             Crear evento
                                         </button>
                                     </span>
@@ -68,8 +68,8 @@ const AppEvents = () => {
                                                 <CardEvent/>
                                             </div>
                                             <div className=" flex items-center justify-center my-3">
-                                                <div className="w-72 h-36 rounded-xl flex flex-col items-center justify-center cursor-pointer shadow-lg bg-[#f2f2f2] border border-gray-100 transition text-[#f7628c]">
-                                                    <FaRegSquarePlus className="text-[#f7628c] w-10 h-10"/>
+                                                <div className="w-72 h-36 rounded-xl flex flex-col items-center justify-center cursor-pointer shadow-lg bg-[#f2f2f2] border border-gray-100 transition text-[#1ca6af]">
+                                                    <FaRegSquarePlus className="text-[#1ca6af] w-10 h-10"/>
                                                     <p className="font-display font-base text-md">
                                                         Crear nuevo evento
                                                     </p>

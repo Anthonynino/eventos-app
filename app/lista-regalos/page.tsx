@@ -1,6 +1,6 @@
 import { MdShare } from "react-icons/md";
-import NavbarApp from "../components/Navbar/NavbarApp";
-import MinHeader from "../components/MinHeader";
+import NavbarApp from "../../components/Common/NavbarApp";
+import MinHeader from "../../components/App/MinHeader";
 import { FaCoins, FaPiggyBank } from "react-icons/fa6";
 import { AiFillAmazonCircle } from "react-icons/ai";
 import { FaList, FaMoneyBill } from "react-icons/fa";
@@ -20,7 +20,7 @@ const GiftList = () => {
                                 <div className="w-full md:w-1/2 bg-white shadow-lg flex gap-8 items-center justify-center p-6 rounded-xl">
                                     <FaCoins className="w-12 h-12 text-gray-500"/>
                                     <div className="font-display flex flex-col items-center">
-                                        <h3 className="text-lg text-[#f7628c] font-medium">
+                                        <h3 className="text-lg text-[#1ca6af] font-medium">
                                             Valor total
                                         </h3>
                                         <p className="text-2xl text-gray-500 font-semibold">
@@ -42,7 +42,7 @@ const GiftList = () => {
                                 <div className="w-full md:w-1/2 bg-white shadow-lg flex gap-4 items-center justify-center p-6 rounded-xl">
                                     <FaPiggyBank className="w-12 h-12 text-gray-500"/>
                                     <div className="font-display flex flex-col items-start">
-                                        <h3 className="text-lg text-[#f7628c] font-medium">
+                                        <h3 className="text-lg text-[#1ca6af] font-medium">
                                             Saldo transferible
                                         </h3>
                                         <p className="text-2xl text-gray-500 font-semibold">
@@ -52,7 +52,7 @@ const GiftList = () => {
                                 </div>
                             </div>
                             <div className="w-full bg-white shadow-lg flex gap-4 items-center justify-center p-6 rounded-xl">
-                                <AiFillAmazonCircle className="w-28 h-28 text-[#f7628c]" />
+                                <AiFillAmazonCircle className="w-28 h-28 text-[#1ca6af]" />
                                 <div className="font-display flex flex-col items-start">
                                     <h3 className="text-lg text-gray-400 font-medium leading-5">
                                     Construye vuestra lista de regalos
@@ -72,7 +72,7 @@ const GiftList = () => {
                             <div className="w-full grid-cols-1 md:grid-cols-3 grid gap-6 cursor-pointer">
                                 <a href="" className="bg-green-300 rounded-xl shadow-lg col-span-1 flex justify-center flex-col items-center font-display h-max p-6 gap-4 hover:scale-105 transition duration-200 transform ">
                                 <FaList className="w-12 h-12 text-white"/>
-                                <h3 className="text-lg font-semibold text-[#f7628c] text-center leading-4 flex flex-col gap-2 ">
+                                <h3 className="text-lg font-semibold text-[#1ca6af] text-center leading-4 flex flex-col gap-2 ">
                                     Crea tu lista
                                     <br />
                                     <span className="font-semibold text-sm leading-4">
@@ -80,7 +80,7 @@ const GiftList = () => {
                                     </span>
                                 </h3>
                                 </a>
-                                <button className="bg-[#f7628c] rounded-xl shadow-lg col-span-1 flex justify-center flex-col items-center font-display h-max p-6 gap-4 hover:scale-105 transition duration-200 transform ">
+                                <button className="bg-[#1ca6af] rounded-xl shadow-lg col-span-1 flex justify-center flex-col items-center font-display h-max p-6 gap-4 hover:scale-105 transition duration-200 transform ">
                                     <MdShare className="text-white w-10 h-10"/>
                                     <h3 className="text-lg font-semibold text-white text-center leading-4 flex flex-col gap-2 ">
                                     Compartela

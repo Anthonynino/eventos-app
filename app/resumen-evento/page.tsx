@@ -1,13 +1,13 @@
 import { IoMdShare } from "react-icons/io";
-import NavbarApp from "../components/Navbar/NavbarApp";
+import NavbarApp from "../../components/Common/NavbarApp";
 import { GoPencil } from "react-icons/go";
 import { LuFileText } from "react-icons/lu";
 import { IoSearchOutline } from "react-icons/io5";
 import { FaCoins, FaPiggyBank } from "react-icons/fa6";
 import { HiUsers } from "react-icons/hi2";
 import { MdOutlineTableRestaurant } from "react-icons/md";
-import ButtonAboutEvent from "../components/Buttons/ButtonAboutEvent";
-import NavbarDown from "../components/Navbar/NavbarDown";
+import ButtonAboutEvent from "../../components/Buttons/ButtonAboutEvent";
+import NavbarDown from "../../components/Common/NavbarDown";
 
 const ResumenEvent = () => {
     return ( <>
@@ -32,7 +32,7 @@ const ResumenEvent = () => {
                                             <IoMdShare className="w-6 h-6"/>
                                         </span>
                                         <span className="transition transform hover:scale-110 *hover:rotate-12 cursor-pointer z-30">
-                                            <GoPencil className="w-6 h-6 text-[#f7628c]"/>
+                                            <GoPencil className="w-6 h-6 text-[#1ca6af]"/>
                                         </span>
                                     </div>
                                     <div className="md:w-1/2 h-full flex flex-col items-center justify-center px-8 gap-6 relative">
@@ -47,7 +47,7 @@ const ResumenEvent = () => {
                                                 <p>
                                                    - 
                                                 </p>
-                                                <p className="text-[#f7628c]">
+                                                <p className="text-[#1ca6af]">
                                                     Categoria
                                                 </p>
                                             </span>
@@ -62,7 +62,7 @@ const ResumenEvent = () => {
                                                 </p>
                                             </span>
                                             <div className="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                                                <svg className="bg-[#f7628c] h-full" width="20%">
+                                                <svg className="bg-[#1ca6af] h-full" width="20%">
                                                 </svg>
                                             </div>
                                         </div>
@@ -145,7 +145,7 @@ const ResumenEvent = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button className="focus:outline-none rounded-lg border border-[#f7628c] px-2 mx-auto inset-x-0 font-display text-[#f7628c] text-sm py-1 hover:text-white hover:bg-primary transition">
+                                            <button className="focus:outline-none rounded-lg border border-[#1ca6af] px-2 mx-auto inset-x-0 font-display text-[#1ca6af] text-sm py-1 hover:text-white hover:bg-primary transition">
                                                 Anadir gastos
                                             </button>
                                         </div>
@@ -186,13 +186,13 @@ const ResumenEvent = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button className="focus:outline-none rounded-lg border border-[#f7628c] px-2 mx-auto inset-x-0 font-display text-[#f7628c] text-sm py-1 hover:text-white hover:bg-primary transition">
+                                            <button className="focus:outline-none rounded-lg border border-[#1ca6af] px-2 mx-auto inset-x-0 font-display text-[#1ca6af] text-sm py-1 hover:text-white hover:bg-primary transition">
                                                 Anadir invitados
                                             </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="w-full bg-[#f7628c] rounded-2xl h-16 flex shadow-md md:overflow-hidden relative">
+                                <div className="w-full bg-[#1ca6af] rounded-2xl h-16 flex shadow-md md:overflow-hidden relative">
                                     <div className="w-full md:w-4/5 flex items-center justify-between px-10 ">
                                         <h3 className="font-display font-semibold hidden md:block text-2xl text-white first-letter:capitalize"> 
                                             Invitaciones
@@ -220,7 +220,7 @@ const ResumenEvent = () => {
                                     </div>
                                     <div className="w-1/2 md:w-1/5 h-1/2 md:h-full top-0 right-0 transform -translate-y-2/3 md:translate-y-0 absolute md:relative bg-white rounded-2xl md:rounded-l-2xl flex items-center justify-center shadow">
                                         <div>
-                                            <p className="font-display font-ligth text-sm text-[#f7628c] cursor-pointer hover:scale-105 transition transform">
+                                            <p className="font-display font-ligth text-sm text-[#1ca6af] cursor-pointer hover:scale-105 transition transform">
                                                 Ver mis <span className="font-bold"> Invitaciones</span>
                                             </p>
                                         </div>
@@ -286,7 +286,7 @@ const ResumenEvent = () => {
                                                 </div>
                                             </div>
                                             <div>
-                                                <button className="rounded-lg border border-[#f7628c] px-2 font-display text-[#f7628c] text-sm py-1 hover:text-white hover:bg-primary transition focus:outline-none">
+                                                <button className="rounded-lg border border-[#1ca6af] px-2 font-display text-[#1ca6af] text-sm py-1 hover:text-white hover:bg-primary transition focus:outline-none">
                                                     Ver mesas
                                                 </button>
                                             </div>

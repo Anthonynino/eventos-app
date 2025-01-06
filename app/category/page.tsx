@@ -1,9 +1,9 @@
-import CardInfo from "../components/Cards/CardInfo";
-import CardSliderMazine from "../components/Cards/CardMagazineSlider";
-import CardSliderCategory from "../components/Cards/CardSliderCategory";
-import FilterVer from "../components/FiltersBar/FiltersVer";
-import Footer from "../components/Footer";
-import Header from "../components/Navbar/Header";
+import CardInfo from "../../components/Cards/CardInfo";
+import CardSliderMazine from "../../components/Cards/CardMagazineSlider";
+import CardSliderCategory from "../../components/Cards/CardSliderCategory";
+import FilterVer from "../../components/FiltersBar/FiltersVer";
+import Footer from "../../components/Common/Footer";
+import Header from "../../components/Common/Header";
 
 const Category = () => {
     return ( <>
@@ -15,7 +15,7 @@ const Category = () => {
                         <img src="https://api.bodasdehoy.com/uploads/fe6691/beautiful-young-women-with-wedding-dress-hanging-o-2021-09-03-21-05-18-utc%201%201-i640.webp" alt="" className="hidden md:block md:w-full md:h-60 md:transform md:-mt-32 md:z-10 md:object-center md:object-cover " />
                         <div className="bg-white relative overflow-hidden rounded-2xl max-w-screen-lg 2xl:max-w-screen-xl mx-auto inset-x-0 flex items-center justify-center p-4 relative md:-mt-12 shadow-md w-[95%] ">
                             <div className="flex flex-col justify-center items-center">
-                                <h1 className="font-semibold text-[#f7628c] text-2xl capitalize z-10 relative ">
+                                <h1 className="font-semibold text-[#1ca6af] text-2xl capitalize z-10 relative ">
                                     Titulo de categoria
                                 </h1>
                                 <h3 className="font-medium text-gray-600 text-sm tracking-tight z-10 relative text-center">
