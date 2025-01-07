@@ -1,3 +1,5 @@
+"use client";
+
 import { IoMdShare } from "react-icons/io";
 import NavbarApp from "../../components/Common/NavbarApp";
 import { GoPencil } from "react-icons/go";
@@ -8,8 +10,16 @@ import { HiUsers } from "react-icons/hi2";
 import { MdOutlineTableRestaurant } from "react-icons/md";
 import ButtonAboutEvent from "../../components/Buttons/ButtonAboutEvent";
 import NavbarDown from "../../components/Common/NavbarDown";
+import Modal from "@/components/Modal/NewEvent";
+import { useState } from "react";
 
 const ResumenEvent = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(true);
+    
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
     return ( <>
             <div className="w-[100vw] h-[100vh] bg-[#f2f2f2]">
                 <NavbarDown/>
@@ -28,10 +38,10 @@ const ResumenEvent = () => {
 
                                             </div>
                                         </div>
-                                        <span className="transition transform z-30 text-gray-300">
+                                        <span  className="transition transform z-30 text-gray-300">
                                             <IoMdShare className="w-6 h-6"/>
                                         </span>
-                                        <span className="transition transform hover:scale-110 *hover:rotate-12 cursor-pointer z-30">
+                                        <span onClick={openModal} className="transition transform hover:scale-110 *hover:rotate-12 cursor-pointer z-30">
                                             <GoPencil className="w-6 h-6 text-[#1ca6af]"/>
                                         </span>
                                     </div>
@@ -339,7 +349,50 @@ const ResumenEvent = () => {
                         </section>
                     </main>
                 </div>
+                
             </div>
+            <Modal isOpen={isModalOpen} onClose={closeModal} >
+                <form action="" className='w-full'>
+                    <div className='border-l-2 border-gray-100 pl-3 w-full '>
+                        <h2 className='font-display text-3xl capitalize text-[#1ca6af] font-light'>
+                            Editar
+                        </h2>
+                        <h2 className='font-display text-5xl capitalize text-gray-500 font-medium'>
+                            Evento
+                        </h2>
+                    </div>
+                    <div className='flex flex-col gap-5 py-6 w-full'>
+                        <div>
+                            <div className=' w-full h-max relative'>
+                                <label htmlFor="" className='font-display text-primary text-sm w-full'>Nombre del evento</label>
+                                <div className=' w-full relative flex items-center'>
+                                    <input type="text" className=' font-display text-sm text-gray-500 border-[1px] border-gray-200 focus:border-gray-400 w-full py-2 px-1 rounded-xl focus:ring-0 focus:outline-none transition' />
+                                </div>
+                            </div>
+                        </div>
+                        <div className=' relative* w-full h-full col-spanundefined content-between'>
+                            <label htmlFor="" className=' font-display text-sm text-[#1ca6af] w-full'>
+                            Tipo de evento
+                            </label>
+                            <div className=' relative'>
+                                <select name="" id="" className=' font-display capitalize cursor-pointer text-sm text-gray-500 border border-gray-300 focus:border-gray-400 focus:ring-0 transition w-full py-2 pr-7 rounded-xl focus:outline-none'>
+                                    <option value="">Seleccionar</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div className=' w-full h-max relative'>
+                            <label htmlFor="" className=' font-display text-[#1ca6af] text-sm w-full'>Fecha del evento</label>
+                            <div className=' w-full relative flex items-center'>
+                                <input type="date" className=' false font-display text-sm text-gray-500 border-[1px] border-gray-200 focus:border-gray-400 w-full py-2 px-4 rounded-xl focus:ring-0 focus:outline-none transition undefined' />
+                            </div>
+                        </div>
+                        <button className='font-display rounded-full mt-4 py-2 px-6 text-white font-medium transition w-full hover:opacity-70 bg-[#1ca6af]'>
+                            Guardar
+                        </button>
+                    </div>
+                
+                </form>
+                </Modal>
     </> );
 }
  
