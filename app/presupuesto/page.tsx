@@ -5,6 +5,7 @@ import { useState } from "react";
 import BudgetC from "../../components/Budget/BudgetC";
 import PaymentsTable from "../../components/Budget/PaymentsTable";
 import ScheduleTable from "../../components/Budget/ScheduledPayments";
+import NavbarDown from "@/components/Common/NavbarDown";
 
 const Budget = () => {
 
@@ -16,6 +17,8 @@ const Budget = () => {
 
     return ( <>
             <div className="w-[100vw] h-[100vh]">
+            <NavbarDown/>
+
                 <div className="md:block relative">
                     <NavbarApp/>
                 </div>

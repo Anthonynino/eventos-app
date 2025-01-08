@@ -4,10 +4,13 @@ import MinHeader from "../../components/App/MinHeader";
 import { FaCoins, FaPiggyBank } from "react-icons/fa6";
 import { AiFillAmazonCircle } from "react-icons/ai";
 import { FaList, FaMoneyBill } from "react-icons/fa";
+import NavbarDown from "@/components/Common/NavbarDown";
 
 const GiftList = () => {
     return ( <>
         <div className="w-[100vw] h-[100vh]">
+            <NavbarDown/>
+
             <div className="md:block relative">
                 <NavbarApp/>
             </div>

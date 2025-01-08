@@ -1,9 +1,11 @@
 import MinHeader from "@/components/App/MinHeader";
 import NavbarApp from "@/components/Common/NavbarApp";
+import NavbarDown from "@/components/Common/NavbarDown";
 
 const Itinerary = () => {
     return ( <>
         <div className="w-[100vw] h-[100vh]">
+            <NavbarDown/>
             <div className="md:block relative">
                 <NavbarApp/>
             </div>

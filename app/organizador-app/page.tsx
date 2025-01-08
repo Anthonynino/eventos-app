@@ -6,6 +6,7 @@ import { FaRegSquarePlus } from "react-icons/fa6";
 import CardEvent from "../../components/Cards/CardEvent";
 import Modal from "../../components/Modal/NewEvent";
 import { useState } from "react";
+import NavbarDown from "@/components/Common/NavbarDown";
 
 
 const AppEvents = () => {
@@ -17,6 +18,7 @@ const AppEvents = () => {
 
     return ( 
         <div className="w-[100vw] h-[100vh]">
+            <NavbarDown/>
             <NavbarApp/>
         <div className="w-[100%]  overflow-auto overflow-y-scroll h-[calc(100vh-144px)]">
             <main >

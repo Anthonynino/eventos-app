@@ -5,7 +5,6 @@ import NavbarApp from "../../components/Common/NavbarApp";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaCamera, FaPencilAlt, FaPenFancy, FaSms } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
-import TableInvitations from "../../components/Invitations/TableInvitations";
 import { useState } from "react";
 import EmailInvitation from "../../components/Invitations/Emailnvitation";
 import WhatsappInvitation from "../../components/Invitations/WhatsappInvitation";
@@ -14,6 +13,7 @@ import SmsInvitation from "../../components/Invitations/SmsInvitation";
 import DesignInvitation from "../../components/Invitations/DesignInvitation";
 import InvitationsPending from "../../components/Invitations/InvitationsPending";
 import InvitationsSend from "../../components/Invitations/InvitationsSend";
+import NavbarDown from "@/components/Common/NavbarDown";
 
 const Invitations = () => {
 
@@ -31,6 +31,8 @@ const Invitations = () => {
 
     return ( <>
         <div className="w-[100vw] h-[100vh]">
+        <NavbarDown/>
+
             <div className="md:block relative">
                 <NavbarApp />
             </div>

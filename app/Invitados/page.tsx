@@ -10,6 +10,7 @@ import GuestTable from "../../components/Guest/GuestTable";
 import { useState } from "react";
 import Modal from "@/components/Modal/NewEvent";
 import { ImSpoonKnife } from "react-icons/im";
+import NavbarDown from "@/components/Common/NavbarDown";
 
 const Guest = () => {
 
@@ -28,6 +29,8 @@ const Guest = () => {
 
     return ( <>
         <div className="w-[100vw] h-[100vh]">
+        <NavbarDown/>
+
             <div className="md:block relative">
                 <NavbarApp/>
             </div>
